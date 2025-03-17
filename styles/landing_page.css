@@ -1,0 +1,84 @@
+body {
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.sign_in {
+    width: 578px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.input_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.social_image img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#introduction {
+    font-weight: bold;
+    font-size: 38px;
+    position: relative;
+    top: 40px;
+}
+
+#welcome {
+    font-size: 28px; 
+}
+
+.input_box input {
+    width: 342px;
+    height: 49px;
+}
+
+#forgot_password {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    left: 58%;
+    margin-top: 10px;
+}
+
+#sign_in_button {
+    margin-top: 30px;
+    width: 342px;
+    padding: 25px;
+    position: relative;
+    left: 20%;
+    background-color: #4A3AFF;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.social_image {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 140px;
+}
+
+#register {
+    position: relative;
+    bottom: 100px;
+}
+
+
