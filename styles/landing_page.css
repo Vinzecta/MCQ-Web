@@ -2,11 +2,12 @@ body {
     font-family: "Outfit", sans-serif;
     display: flex;
     justify-content: center;
+    background-color: #FAFAFC;
 }
 
 .sign_in {
     width: 578px;
-    height: 700px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,17 +33,18 @@ body {
 #introduction {
     font-weight: bold;
     font-size: 38px;
-    position: relative;
-    top: 40px;
-}
-
-#welcome {
-    font-size: 28px; 
+    margin-top: 110px;
 }
 
 .input_box input {
     width: 342px;
     height: 49px;
+    border-radius: 5px;
+    border: groove 2px;
+}
+
+::placeholder {
+    font-family: "Outfit", sans-serif;
 }
 
 #forgot_password {
@@ -65,6 +67,7 @@ body {
     color: white;
     border-radius: 5px;
     border: none;
+    font-size: 15px;
 }
 
 .social_image {
@@ -79,6 +82,45 @@ body {
 #register {
     position: relative;
     bottom: 100px;
+}
+
+.password_hidden {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 140px;
+    bottom: 45px;
+}
+
+#open_eye {
+    display: none;
+}
+
+.check_password {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 110px;
+    margin-top: 15px;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+#forgot_password:hover {
+    text-decoration: underline;
+}
+
+#register_link {
+    text-decoration: none;
+}
+
+#register_link:hover {
+    text-decoration: underline;
+}
+
+#sign_in_button:hover {
+    background-color: #6c5ffb;
 }
 
 
