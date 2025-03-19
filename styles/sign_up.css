@@ -1,0 +1,13 @@
+@import url(sign_in.css);
+
+.error_message {
+    color: #ff0018;
+    display: none;
+}
+
+.password_requirements {
+    color: #ff0018;
+}
+
+
+

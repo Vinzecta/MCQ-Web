@@ -7,7 +7,7 @@ body {
 
 .sign_in {
     width: 578px;
-    height: 650px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
