@@ -123,4 +123,123 @@ body {
     background-color: #6c5ffb;
 }
 
+@media screen and (max-width: 450px) {
+    .sign_in {
+        width: 450px;
+    }
+
+    #sign_in_button {
+        left: 30px;
+    }
+
+    .check_password {
+        margin-left: 20px;
+    }
+
+    .social_image {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sign_in {
+        width: 400px;
+    }
+
+    #sign_in_button {
+        left: 10px;
+    }
+
+    .check_password {
+        margin-left: 5px;
+    }
+
+    #forgot_password {
+        margin-left: 15px;
+    }
+
+    .social_image {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .sign_in {
+        width: 370px;
+    }
+
+    #sign_in_button {
+        left: 0px;
+        width: auto;
+    }
+
+    .check_password {
+        margin-left: 5px;
+    }
+
+    #forgot_password {
+        margin-left: 15px;
+    }
+
+    .social_image {
+        width: 30%;
+    }
+}
+
+@media screen and (max-height: 1200px) {
+    .sign_in {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .sign_in {
+        width: 330px;
+    }
+    .input_box input {
+        width: 80%;
+    }
+    .check_password {
+        margin-left: 25px;
+    }
+
+    #forgot_password {
+        margin-left: -20px;
+    }
+
+    #sign_in_button {
+        width: 80%;
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .sign_in {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .sign_in {
+        margin-top: 15%;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .sign_in {
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-height: 940px) {
+    .sign_in {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (max-height: 750px) {
+    .sign_in {
+        margin-top: 0;
+    }
+}
 
