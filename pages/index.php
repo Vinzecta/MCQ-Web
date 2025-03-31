@@ -1,5 +1,5 @@
 <?php
-    $page = 'home';
+    $page = 'landing_page';
     if (isset($_GET['page'])) {
         $page = $_GET['page'];
     }

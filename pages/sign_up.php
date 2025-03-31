@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/sign_up.css">
+    <link rel="stylesheet" href="/styles/Page/sign_up.css">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Sign up</title>
@@ -13,27 +13,9 @@
         <p id="introduction">Let's sign you in</p>
         <div class="input_box">
             <input type="text" placeholder="Username" id="username">
-            <div class="error">
-                <p class="error_message">This field is required!</p>
-                <p class="error_message">Username must be less than 30 characters!</p>
-                <p class="error_message">Username must be between 8 - 30 characters!</p>
-                <p class="error_message">Username mustn't have spaces</p>
-            </div>
             <input type="text" placeholder="Email" id="email">
-            <div class="error">
-                <p class="error_message">This field is required!</p>
-                <p class="error_message">Please enter a valid email address!</p>
-            </div>
             <input type="password" placeholder="Password" id="password">
-            <div class="password_requirements">
-                <p class="requirement">Password must be between 8 - 30 characters</p>
-                <p class="requirement">Password must have at least one special character (!@#$)</p>
-                <p class="requirement">Password must have at least one uppercase character (ABC)</p>
-            </div>
             <input type="password" placeholder="Confirm password" id="confirm">
-            <div class="error">
-                <p class="error_message">Password do not match!</p>
-            </div>
         </div>
         <div class="check_password">
             <input type="checkbox">
