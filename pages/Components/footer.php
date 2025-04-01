@@ -10,9 +10,9 @@
         <p>&copy sigma boy</p>
         <div id="social-media">
             <p>Follow us:</p>
-            <img id="facebook" src="/images/footer/facebook.png">
-            <img id="instagram" src="/images/footer/instagram.png">
-            <img id="twitter" src="/images/footer/twitter.png">
+            <img id="facebook" src="../images/footer/facebook.png" alt="facebook">
+            <img id="instagram" src="../images/footer/instagram.png" alt="instagram">
+            <img id="twitter" src="../images/footer/twitter.png" alt="twitter">
         </div>
     </footer>
 </body>
