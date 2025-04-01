@@ -18,7 +18,7 @@
             <p>Anytime, Anywhere, Hassle-Free!</p>
         </div>
         <div id="right-banner">
-            <img src="/images/landing_page/online_exam.jpg" alt="Online exam">
+            <img src="../images/landing_page/online_exam.jpg" alt="Online exam">
         </div>
     </section>
 
@@ -30,13 +30,13 @@
             </div>
 
             <div class="right-content">
-                <img src="/images/landing_page/online_exam 2.jpg" alt="Online exam 2">
+                <img src="../images/landing_page/online_exam 2.jpg" alt="Online exam 2">
             </div>
         </div>
 
         <div class="inside">
             <div class="left-content">
-                <img src="/images/landing_page/online quiz.jpg" alt="Online exam 3">
+                <img src="../images/landing_page/online quiz.jpg" alt="Online exam 3">
             </div>
 
             <div class="right-content">
@@ -54,7 +54,7 @@
             </div>
 
             <div class="right-content">
-                <img src="/images/landing_page/teaching.jpg" alt="Teaching">
+                <img src="../images/landing_page/teaching.jpg" alt="Teaching">
             </div>
         </div>
     </section>
@@ -66,7 +66,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -78,7 +78,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -90,7 +90,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -102,7 +102,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -114,7 +114,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -126,7 +126,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -138,7 +138,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
@@ -150,7 +150,7 @@
                 <h3>Quiz 1</h3>
                 <p class="attempts">100 attempts</p>
                 <div class="author">
-                    <img src="/images/header/user.png" alt="user">
+                    <img src="../images/header/user.png" alt="user">
                     <p>Johnson</p>
                 </div>
                 <div class="view-button">
