@@ -12,6 +12,9 @@ footer {
     width: 100%;
     padding: 20px;
     margin-top: 10%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 #social-media {
