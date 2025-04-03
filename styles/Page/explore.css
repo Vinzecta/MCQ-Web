@@ -70,6 +70,7 @@ html {
     text-align: center;
     gap: 20px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .category-image {
@@ -80,7 +81,7 @@ html {
 
 .category-image img {
     max-width: 100%;
-    min-height: 100%;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -160,7 +161,7 @@ html {
 }
 
 .quiz-information p {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 200;
 }
 
