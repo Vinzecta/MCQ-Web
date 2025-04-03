@@ -19,7 +19,7 @@
 
     <section id="popular">
         <div class="category-title" id="popular-quiz">
-            <h1>Top 10 popular quiz</h1>
+            <h1>Top popular quizzes</h1>
         </div>
 
         <div id="popular-category">
@@ -31,7 +31,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -43,7 +47,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -55,7 +63,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>  
             
@@ -67,7 +79,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -79,7 +95,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -91,7 +111,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -103,7 +127,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -115,7 +143,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -127,7 +159,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
 
@@ -139,7 +175,11 @@
                     <div class="pop-image">
                         <img src="../images/explore/math.jpg" alt="math">
                     </div>
-                    <p>Math</p>
+                    <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                    </div>
                 </div>
             </div>   
         </div>
@@ -214,49 +254,77 @@
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>  
         </div>
     </section>
@@ -272,49 +340,77 @@
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>  
         </div>
     </section>
@@ -330,49 +426,77 @@
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>
 
             <div class="category">
                 <div class="category-image">
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
-                <p>Math</p>
+                <div class="quiz-information">
+                        <h3>Math</h3>
+                        <p>Author: abc</p>
+                        <p>Day created: 01/02/2025</p>
+                </div>
             </div>  
         </div>
     </section>

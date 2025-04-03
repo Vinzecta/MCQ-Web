@@ -158,3 +158,18 @@ html {
     height: fit-content;
     margin: auto 0;
 }
+
+.quiz-information p {
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.quiz-information h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.quiz-information {
+    padding: 10px;
+}
+
