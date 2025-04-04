@@ -10,12 +10,8 @@
 <body>
     <?php
         include "./Components/header.php";
+        include "./Components/search.php";
     ?>
-    
-    <section id="search-bar">
-        <input id="search" type="text" placeholder="Search">
-        <img src="../images/explore/search.png" alt="Search icon">
-    </section>
 
     <section id="popular">
         <div class="category-title" id="popular-quiz">
