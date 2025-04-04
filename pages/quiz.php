@@ -29,7 +29,7 @@
                         <h3>Math</h3>
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
-                    </div>
+                </div>
             </div>
 
             <div class="category">
