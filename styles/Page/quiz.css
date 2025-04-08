@@ -1,0 +1,19 @@
+@import url("category.css");
+
+.list-info p {
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+.list-info h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-bottom: 0;
+    width: 90%;
+}
+
+.list-info {
+    padding: 0;
+}
