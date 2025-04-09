@@ -1,0 +1,10 @@
+DROP TABLE Report;
+DROP TABLE Question_Attempt;
+DROP TABLE Test_Attempt;
+DROP TABLE TestQuestions;
+DROP TABLE Choice;
+DROP TABLE Question;
+DROP TABLE Test;
+DROP TABLE Student;
+DROP TABLE Admins;
+DROP TABLE Users;
