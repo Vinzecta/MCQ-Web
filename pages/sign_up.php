@@ -34,9 +34,9 @@
             <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 uppercase character (A-Z)</div>
 
             <input type="password" placeholder="Confirm password" id="confirm">
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-
+            
             <!-- Confirm password validation -->
+            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Password does not match!</div>
         </div>
         <div class="check_password">
