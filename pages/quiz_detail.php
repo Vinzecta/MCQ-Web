@@ -18,7 +18,7 @@
 
         <div id="about-quiz">
             <h1>Math</h1>
-            <p class="description-hidden">fdvsnvsdvnsdvgnsnsvdsoivjsdvoijgoisgewoibnodsknbsdoieosifeowifeosdfdggbfdhtfgnbfgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggbb</p>
+            <p class="description-hidden">fdvsnvsdvnsdvgn</p>
             <p class="show" id="show-more">Show more</p>
             <p class="show" id="show-less">Show less</p>
             <p>Author: abc</p>
