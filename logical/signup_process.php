@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $salt2 = "fwfbgh#$()";
             $token = hash('ripemd128', "$salt1$password$salt2");
             add_student($connection, $email, $username, $token);
-            $_SESSION['success_message'] = "Sign up successfully, redirect to sign in page...";
+            $_SESSION['success_message'] = "Sign up successfully.";
             $connection->close();
             header("Location: $base_url/pages/index.php?page=sign_in");
         }

@@ -33,6 +33,10 @@ if(!isset($_SESSION))
                     echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
                     unset($_SESSION['error_message']); // Clear the message after displaying it
                 }
+                if (isset($_SESSION['success_message'])) {
+                    echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+                    unset($_SESSION['success_message']); // Clear the message after displaying it
+                }
             ?>
             </div>
         </div>
