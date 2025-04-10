@@ -1,4 +1,5 @@
 @import url("category.css");
+@import url("../Component/alert.css");
 
 .list-info p {
     font-size: 15px !important;
