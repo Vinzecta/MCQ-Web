@@ -63,7 +63,7 @@
                         <label>Email</label>
                         <?php echo '<input type="text" value="' . $_SESSION['Email'] . '" disabled readonly>';?>
                         <p style="text-align: center; padding: 0">You cannot change the email</p>
-                        <label>Phone number</label>
+                        <!-- <label>Phone number</label>
                         <input type="number" id="phone_number" name="phone_number" value="01234567">
                             
                         <div class="alert alert-profile" style="display: none">
@@ -79,7 +79,7 @@
                             <label>Other</label>
                         </div>
                         <label>Date of birth</label>
-                        <input type="date" name="birthdate">
+                        <input type="date" name="birthdate"> -->
                         <button id="save-profile" class="change-profile" type="submit">Save changes</button>
                     </form>
                     <form id="log-out" action="../logical/log_out.php">

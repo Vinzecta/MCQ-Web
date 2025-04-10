@@ -76,12 +76,11 @@ CREATE TABLE Question_Attempt (
     FOREIGN KEY (Question_ID, Choice_Number) REFERENCES Choice(Question_ID, Choice_Number) ON DELETE CASCADE
 );
 
--- Report --
-CREATE TABLE Report (
-    ReportID INT PRIMARY KEY AUTO_INCREMENT,
-    User_ID INT NOT NULL,
+-- Contact --
+CREATE TABLE Contact (
+    Contact_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Email VARCHAR(255) NOT NULL,
     Title VARCHAR(255),
-    Description TEXT,
-    ReportDate DATETIME,
-    FOREIGN KEY (User_ID) REFERENCES Users(User_ID)
+    Messages TEXT,
+    Contact_Date DATETIME DEFAULT CURRENT_TIMESTAMP
 );
