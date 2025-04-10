@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,6 +27,13 @@
 
             <!-- password validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
+            <?php 
+            // Display error
+                if (isset($_SESSION['error_message'])) {
+                    echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                    unset($_SESSION['error_message']); // Clear the message after displaying it
+                }
+            ?>
             </div>
         </div>
 

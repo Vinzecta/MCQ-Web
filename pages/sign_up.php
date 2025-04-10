@@ -30,7 +30,7 @@ if(!isset($_SESSION))
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Please enter a valid email address!</div>
             <?php 
-            // Display error or success messages, if any
+            // Display error
                 if (isset($_SESSION['error_message'])) {
                     echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
                     unset($_SESSION['error_message']); // Clear the message after displaying it
