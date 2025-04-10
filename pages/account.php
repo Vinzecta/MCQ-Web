@@ -52,11 +52,22 @@
                     <div id="right-account-title">
                         <h1>My account</h1>
                     </div>
-                    <form id="edit-profile" enctype="multipart/form-data">
+                    <form id="edit-profile" enctype="multipart/form-data" action="../logical/change_pfp.php" method="POST">
                         <div id="image-edit">
                             <?php echo '<img id="user-image" src="' . $_SESSION['PFP_URL'] .'" alt="user">';?>
-                            <input id="file-upload" name="image" type="file" accept=".jpg,.png">
+                            <input id="file-upload" name="pfp_image" type="file" accept=".jpg, .png">
                         </div>
+                        <?php 
+                        // Display error
+                            if (isset($_SESSION['error_message'])) {
+                                echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                                unset($_SESSION['error_message']); // Clear the message after displaying it
+                            }
+                            if (isset($_SESSION['success_message'])) {
+                                echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+                                unset($_SESSION['success_message']); // Clear the message after displaying it
+                            }
+                        ?>
                         <label>Username</label>
                         <?php echo '<input type="text" value="' . $_SESSION['User_name'] .'" disabled readonly>';?>
                         <p style="text-align: center; padding: 0">You cannot change the username</p>
