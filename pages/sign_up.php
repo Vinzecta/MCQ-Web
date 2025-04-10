@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +14,29 @@
     <title>Sign up</title>
 </head>
 <body>
-    <form class="sign_in">
+    <form class="sign_in" method="post" action="../logical/signup_process.php">
         <p id="introduction">Let's sign you up!</p>
         <div class="input_box">
-            <input type="text" placeholder="Username" id="username">
+            <input type="text" placeholder="Username" id="username" name="Username">
 
             <!-- Username Validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Username must not contain spaces!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Username must be between 8 - 30 characters</div>
 
-            <input type="text" placeholder="Email" id="email">
+            <input type="text" placeholder="Email" id="email" name="Email">
 
             <!--- Email Validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Please enter a valid email address!</div>
-
-            <input type="password" placeholder="Password" id="password">
+            <?php 
+            // Display error
+                if (isset($_SESSION['error_message'])) {
+                    echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                    unset($_SESSION['error_message']); // Clear the message after displaying it
+                }
+            ?>
+            <input type="password" placeholder="Password" id="password" name="Password">
 
             <!--- Password Validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
@@ -32,7 +44,7 @@
             <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 special character (!@#$)</div>
             <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 uppercase character (A-Z)</div>
 
-            <input type="password" placeholder="Confirm password" id="confirm">
+            <input type="password" placeholder="Confirm password" id="confirm" name="Confirm_password">
             
             <!-- Confirm password validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
