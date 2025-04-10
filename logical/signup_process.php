@@ -20,9 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = $check_email_statement->get_result();
 
         if ($result->num_rows > 0) { 
-            echo "Email is already registered. Please use another email or sign in with this email.";
+            $_SESSION['error_message'] = "Email is already registered. Please use another email or sign in.";
             $connection->close();
-            sleep(4);
             header("Location: $base_url/pages/index.php?page=sign_up");
         }
         else {
@@ -30,16 +29,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $salt2 = "fwfbgh#$()";
             $token = hash('ripemd128', "$salt1$password$salt2");
             add_student($connection, $email, $username, $token);
-            echo "Sign up successfully, redirect to sign in page...";
+            $_SESSION['success_message'] = "Sign up successfully, redirect to sign in page..."
             $connection->close();
-            sleep(4);
             header("Location: $base_url/pages/index.php?page=sign_in");
         }
     }
     else {
-        echo "Invalid input, try again";
+        $_SESSION['error_message'] = "Invalid input. Please fill out all fields correctly.";
         $connection->close();
-        sleep(4);
         header("Location: $base_url/pages/index.php?page=sign_up");
     }
 }

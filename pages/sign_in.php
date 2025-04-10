@@ -8,16 +8,16 @@
     <title>Sign in</title>
 </head>
 <body>
-    <form class="sign_in">
+    <form class="sign_in" method="post" action="../logical/signin_process.php">
         <p id="introduction">Let's sign you in!</p>
         <div class="input_box">
-            <input id="email" type="text" placeholder="Email">
+            <input id="email" type="text" placeholder="Email" name="Email">
 
             <!-- Email validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Please enter a valid email address!</div>
 
-            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Password" id="password" name="Password">
 
             <!-- password validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>

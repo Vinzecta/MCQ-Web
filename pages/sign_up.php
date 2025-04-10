@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +29,13 @@
             <!--- Email Validation -->
             <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
             <div class="alert alert-danger" role="alert" style="display: none">Please enter a valid email address!</div>
-
+            <?php 
+            // Display error or success messages, if any
+                if (isset($_SESSION['error_message'])) {
+                    echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                    unset($_SESSION['error_message']); // Clear the message after displaying it
+                }
+            ?>
             <input type="password" placeholder="Password" id="password" name="Password">
 
             <!--- Password Validation -->
