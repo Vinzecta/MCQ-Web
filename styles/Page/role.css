@@ -1,0 +1,73 @@
+body, html {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#set-role {
+    margin: auto;
+}
+
+#role-selection {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+#user img {
+    width: 100px;
+    height: 100px;
+}
+
+#teacher img {
+    width: 100px;
+    height: 100px;
+}
+
+#set-role h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5% 5% 5%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 5% 5% 5%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#user p {
+    font-size: 30px;
+}
+
+#teacher p {
+    font-size: 30px;
+}
+
+#user:hover {
+    background-color: rgb(38, 38, 243);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#teacher:hover {
+    background-color: rgb(38, 38, 243);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
