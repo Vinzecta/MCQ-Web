@@ -1,3 +1,9 @@
+<?php 
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +19,15 @@
             <a href="index.php?page=explore">EXPLORE</a>
             <a href="index.php?page=contact">CONTACT</a>
         </nav>
-        <a id="nav-sign-in" href="index.php?page=sign_in">Log in</a>
-
-        <!--Check if there is a user => <img id="user" src="/images/header/user.png" alt="user">-->
+        <?php 
+        if (isset($_SESSION['User_ID'])) {
+            echo '<a href="index.php?page=account" id="user"><img src="' . $_SESSION["PFP_URL"] . '"></a>';
+            // echo '<img id="user" src="../images/header/user.png" alt="user">';
+        }
+        else {
+            echo '<a id="nav-sign-in" href="index.php?page=sign_in">Log in</a>';
+        }
+        ?>
     </header>
 </body>
 </html>

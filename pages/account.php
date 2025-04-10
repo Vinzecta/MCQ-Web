@@ -1,6 +1,14 @@
 <!-- Dynamic url display for different section -->
 <?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+    $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
     $display = isset($_GET['account_display']) && in_array($_GET['account_display'], array('profile', 'history', 'reset_password')) ? $_GET['account_display'] : 'profile';
+    if(!isset($_SESSION['User_ID'])) {
+        header("Location: $base_url/pages/index.php?page=log_in");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -46,14 +54,14 @@
                     </div>
                     <form id="edit-profile" enctype="multipart/form-data">
                         <div id="image-edit">
-                            <img id="user-image" src="../images/account/user.png" alt="user">
+                            <?php echo '<img id="user-image" src="' . $_SESSION['PFP_URL'] .'" alt="user">';?>
                             <input id="file-upload" name="image" type="file" accept=".jpg,.png">
                         </div>
                         <label>Username</label>
-                        <input type="text" value="Username" disabled readonly>
+                        <?php echo '<input type="text" value="' . $_SESSION['User_name'] .'" disabled readonly>';?>
                         <p style="text-align: center; padding: 0">You cannot change the username</p>
                         <label>Email</label>
-                        <input type="text" value="Email" disabled readonly>
+                        <?php echo '<input type="text" value="' . $_SESSION['Email'] . '" disabled readonly>';?>
                         <p style="text-align: center; padding: 0">You cannot change the email</p>
                         <label>Phone number</label>
                         <input type="number" id="phone_number" name="phone_number" value="01234567">
@@ -74,7 +82,7 @@
                         <input type="date" name="birthdate">
                         <button id="save-profile" class="change-profile" type="submit">Save changes</button>
                     </form>
-                    <form id="log-out" action="../Backend/log_out.php">
+                    <form id="log-out" action="../logical/log_out.php">
                             <button id="log-out-button" class="change-profile" type="submit">Log out</button>
                     </form>
                 </div>
@@ -96,7 +104,7 @@
                     <div id="right-reset-title">
                         <h1>Reset password</h1>
                     </div>
-                    <form id="reset-pass" method="post" action="../Backend/reset_pass.php">
+                    <form id="reset-pass" method="post" action="../logical/reset_pass.php">
                         <label>New password</label>
                         <input id="profile-password" type="password" class="password" name="password" placeholder="Enter new password">
                         <div class="alert alert-profile" style="display: none">
