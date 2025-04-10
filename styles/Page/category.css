@@ -1,4 +1,5 @@
 @import url("explore.css");
+@import url("../Component/alert.css");
 
 .category-title {
     display: flex;
