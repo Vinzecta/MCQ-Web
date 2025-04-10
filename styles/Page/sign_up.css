@@ -2,4 +2,10 @@
 @import url("../Component/alert.css");
 @import url("../Component/success.css");
 
+#role {
+    padding: 20px;
+    border-radius: 15px;
+    font-family: "Outfit", sans-serif;
+}
+
 

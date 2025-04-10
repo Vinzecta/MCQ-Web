@@ -184,7 +184,7 @@
     <section class="categories">
         <div class="category-title">
             <h1>Categories</h1>
-            <a href="index.php?index=categories">View all</a>
+            <a href="index.php?page=category">View all</a>
         </div>  
 
         <div class="category-display">
@@ -242,7 +242,7 @@
     <section class="categories">
         <div class="category-title">
             <h1>Math</h1>
-            <a href="index.php?index=categories">View all</a>
+            <a href="index.php?page=category">View all</a>
         </div>  
 
         <div class="category-display">
@@ -328,7 +328,7 @@
     <section class="categories">
         <div class="category-title">
             <h1>Chemistry</h1>
-            <a href="index.php?index=categories">View all</a>
+            <a href="index.php?page=category">View all</a>
         </div>  
 
         <div class="category-display">
@@ -414,7 +414,7 @@
     <section class="categories">
         <div class="category-title">
             <h1>Math</h1>
-            <a href="index.php?index=categories">View all</a>
+            <a href="index.php?page=category">View all</a>
         </div>  
 
         <div class="category-display">

@@ -1,6 +1,7 @@
 @import url("category.css");
 @import url("../Component/alert.css");
 @import url("../Component/success.css");
+@import url("../Component/pagination.css");
 
 .list-info p {
     font-size: 15px !important;

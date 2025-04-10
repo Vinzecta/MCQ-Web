@@ -229,6 +229,19 @@
                         <p>Day created: 01/02/2025</p>
                     </div>
             </div>  
+
+            <!--Pagination -->
+            <div id="pagination">
+                <a><img src="../images/category/left_arrow.png" alt="left-arrow"></a>
+
+                <div class="pagination-list">
+                    <a class="pagination-number"><p>1</p></a>
+                    <a class="pagination-number"><p>2</p></a>
+                    <a class="pagination-number"><p>3</p></a>
+                </div>
+
+                <a><img src="../images/category/right_arrow.png" alt="right-arrow"></a>
+            </div>
         </div>
     </section>
 

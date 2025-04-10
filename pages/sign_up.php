@@ -36,6 +36,13 @@ if(!isset($_SESSION))
                     unset($_SESSION['error_message']); // Clear the message after displaying it
                 }
             ?>
+
+            <!-- Role selector -->
+            <select id="role">
+                <option value="student">Student</option>
+                <option value="admin">Admin</option>
+            </select>
+
             <input type="password" placeholder="Password" id="password" name="Password">
 
             <!--- Password Validation -->

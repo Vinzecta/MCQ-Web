@@ -1,6 +1,7 @@
 @import url("explore.css");
 @import url("../Component/alert.css");
 @import url("../Component/success.css");
+@import url("../Component/pagination.css");
 
 .category-title {
     display: flex;
