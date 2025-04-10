@@ -12,15 +12,15 @@
         <h1>Select your role!</h1>
 
         <div id="role-selection">
-            <div id="user">
+            <a id="user" href="index.php?page=landing_page&role=student">
                 <img src="../images/role/student.png" alt="Student">
                 <p>User</p>
-            </div>
+            </a>
 
-            <div id="teacher">
+            <a id="teacher" href="index.php?page=landing_page&role=admin">
                 <img src="../images/role/teacher.png" alt="Teacher">
                 <p>Admin</p>
-            </div>
+            </a>
         </div>
     </section>
 </body>
