@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION)) 
+{ 
+    session_start(); 
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +20,7 @@
 
     <h1 id="contact-us">Contact Us</h1>
 
-<section id="contact">
+    <section id="contact">
         <div id="contact-left">
             <h2 id="contact-title">Contact Information</h2>
 
@@ -31,15 +37,34 @@
             <h2>Got Any Question?</h2>
             <p>Use the form below to contact with us!</p>
 
-            <form id="contact-form">
+            <form id="contact-form" method="POST" action="../logical/contact_process.php">
                 <label>Email</label>
-                <input type="text" placeholder="Enter email">
+                <?php
+                    if (isset($_SESSION['User_ID'])) {
+                        echo '<input type="text" placeholder="Enter email" value="' . $_SESSION['Email'] . '" name="email" readonly>';
+                    }
+                    else {
+                        echo '<input type="text" placeholder="Enter email" name="email">';
+                    }
+                ?>
                 <label>Title</label>
-                <input type="text" placeholder="Enter the contact title">
+                <input type="text" placeholder="Enter the contact title" name="title">
                 <label>Message</label>
-                <textarea type="text" placeholder="Enter the message"></textarea>
+                <textarea type="text" placeholder="Enter the message" name="message"></textarea>
                 <button id="submit-contact" type="submit">Submit</button>
+                <?php 
+                // Display error
+                    if (isset($_SESSION['error_message'])) {
+                        echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                        unset($_SESSION['error_message']); // Clear the message after displaying it
+                    }
+                    if (isset($_SESSION['success_message'])) {
+                        echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+                        unset($_SESSION['success_message']); // Clear the message after displaying it
+                    }
+                ?>
             </form>
+            
         </div>
     </section>
 
