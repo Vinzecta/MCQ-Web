@@ -45,6 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     session_regenerate_id(true);
                     $_SESSION['User_ID'] = $user['User_ID'];
                     $_SESSION['User_name'] = $user['User_name'];
+                    $_SESSION['Email'] = $user['Email'];
                     $_SESSION['PFP_URL'] = $user['PFP_URL'];
                     $_SESSION['Student_ID'] = $student['Student_ID'];
                     $_SESSION['is_admin'] = FALSE;
@@ -55,9 +56,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     session_regenerate_id(true);
                     $_SESSION['User_ID'] = $user['User_ID'];
                     $_SESSION['User_name'] = $user['User_name'];
+                    $_SESSION['Email'] = $user['Email'];
                     $_SESSION['PFP_URL'] = $user['PFP_URL'];
                     $_SESSION['Admin_ID'] = $student['Admin_ID'];
-                    $_SESSION['is_admin'] = FALSE;
+                    $_SESSION['is_admin'] = TRUE;
                 }
                 $connection->close();
                 header("Location: $base_url/pages/index.php?page=landing_page");

@@ -36,11 +36,13 @@ header {
 }
 
 #user {
+   display: flex;
+}
+#user img {
     width: 30px;
     height: 30px;
     margin: auto 0;
 }
-
 #search {
     width: 20px;
     height: 20px;
