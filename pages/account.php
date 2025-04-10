@@ -7,7 +7,7 @@
     $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
     $display = isset($_GET['account_display']) && in_array($_GET['account_display'], array('profile', 'history', 'reset_password')) ? $_GET['account_display'] : 'profile';
     if(!isset($_SESSION['User_ID'])) {
-        header("Location: $base_url/pages/index.php?page=log_in");
+        header("Location: $base_url/pages/index.php?page=sign_in");
     }
 ?>
 
@@ -111,7 +111,7 @@
                             <p>This field is required!</p>
                         </div>
                         <label>Re-type password</label>
-                        <input id="profile-re-password" type="password" class="password" placeholder="Re-type password">
+                        <input id="profile-re-password" type="password" class="password" name="Re-type-password" placeholder="Re-type password">
                         <div class="alert alert-profile" style="display: none">
                             <p>This field is required!</p>
                         </div>
@@ -122,6 +122,16 @@
                             <input id="profile-show" type="checkbox" class="pass-show" value="yes">
                             <p>Show password</p>
                         </div>
+                        <?php 
+                        if (isset($_SESSION['error_message'])) {
+                            echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                            unset($_SESSION['error_message']); // Clear the message after displaying it
+                        }
+                        if (isset($_SESSION['success_message'])) {
+                            echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+                            unset($_SESSION['success_message']); // Clear the message after displaying it
+                        }
+                        ?>
                         <button id="change-pass-button" class="change-profile" type="submit">Save changes</button>
                     </form>
                     <script src="../js/Page/profile_password_validation.js"></script>
