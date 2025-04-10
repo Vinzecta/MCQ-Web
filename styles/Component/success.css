@@ -1,0 +1,12 @@
+.success p {
+    padding: 15px;
+    font-size: 15px;
+    color: #842029;
+    font-weight: bold;
+}
+
+.success {
+    background-color: #f8d7da ;
+    border-radius: 15px;
+    padding: 20px;
+}
