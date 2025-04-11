@@ -34,9 +34,7 @@
             <!-- Image upload -->
             <div class="image-upload">
                 <label class="image-label">
-                    <div class="image-label-container">
-                        <img id="question-image" src="../images/question/default_question.png">
-                    </div>
+                    <img id="question-image" src="../images/question/default_question.png">
                     <p>Supported formats: JPEG, PNG, GIF (Max size: 2MB).</p>
                 </label>
                 <input id="file-upload" type="file" accept=".jpeg, .png, .gif, .jpg" name="Question_image">
