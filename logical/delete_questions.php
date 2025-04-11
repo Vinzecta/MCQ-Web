@@ -27,6 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
         }
         else {
             $_SESSION['error_message'] = 'Can not delete questions, try again!';
+            header('Location: ' . $_SERVER['HTTP_REFERER']);
+            exit;
         }
 
     }

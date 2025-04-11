@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["pfp_image"]["name"]))
     if($_FILES["pfp_image"]["size"] > 150000) {
         $_SESSION['error_message'] = 'File to large. Try again';
         header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
     }
     $filename = 'User_' . $_SESSION['User_ID'] . 'PFP'. $ext;
     $cover_path = "../images/account/" . $filename;
@@ -28,6 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["pfp_image"]["name"]))
     if (!move_uploaded_file($_FILES["pfp_image"]["tmp_name"], $cover_path)) {
         $_SESSION['error_message'] = 'Can not upload file, try again';
         header('Location: ' . $_SERVER['HTTP_REFERER']);
+        exit;
     }
 
     // Update path in database
