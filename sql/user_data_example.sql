@@ -6,3 +6,4 @@ VALUES
 ('user3@example.com', 'UserThree3', '$2y$10$f3M@.YHash3dPa$$w0rd3', '../images/account/user.png'),
 ('user4@example.com', 'UserFour4', '$2y$10$f4M@.YHash3dPa$$w0rd4', '../images/account/user.png'),
 ('user5@example.com', 'UserFive5', '$2y$10$f5M@.YHash3dPa$$w0rd5', '../images/account/user.png');
+('user6@example.com', 'UserSix6', '$2y$10$f5M@.YHash3dPa$$w0rd6', '../images/account/user.png');
