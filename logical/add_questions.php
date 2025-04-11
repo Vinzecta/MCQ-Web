@@ -46,6 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
         if($_FILES["Question_image"]["size"] > 2000000) {
             $_SESSION['error_message'] = 'File to large. Try again';
             header('Location: ' . $_SERVER['HTTP_REFERER']);
+            exit;
         }
         $filename = 'Questions_' . $question_id . '_img'. $ext;
         $Question_URL = "../images/question/" . $filename;
@@ -53,6 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
         if (!move_uploaded_file($_FILES["Question_image"]["tmp_name"], $Question_URL)) {
             $_SESSION['error_message'] = 'Can not upload file, try again';
             header('Location: ' . $_SERVER['HTTP_REFERER']);
+            exit;
         }
 
         // Update path in database
