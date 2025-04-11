@@ -28,6 +28,13 @@ if(!isset($_SESSION))
             echo '<a id="nav-sign-in" href="index.php?page=sign_in">Log in</a>';
         }
         ?>
+
+        <!-- Set admin header -->
+        <!-- <nav id="navigation">
+            <a href="index.php?page=landing_page">HOME</a>
+            <a href="index.php?page=test_management">YOUR TESTS</a>
+            <a href="index.php?page=student_management">STUDENTS</a>
+        </nav> -->
     </header>
 </body>
 </html>

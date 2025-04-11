@@ -152,7 +152,41 @@
                     <img src="../images/explore/math.jpg" alt="math">
                 </div>
                 <p>Math</p>
-            </div>  
+            </div> 
+
+            <div class="category ">
+                <div class="category-image">
+                    <img src="../images/explore/math.jpg" alt="math">
+                </div>
+                <p>Math</p>
+            </div> 
+
+            <div class="category ">
+                <div class="category-image">
+                    <img src="../images/explore/math.jpg" alt="math">
+                </div>
+                <p>Math</p>
+            </div> 
+
+            <div class="category ">
+                <div class="category-image">
+                    <img src="../images/explore/math.jpg" alt="math">
+                </div>
+                <p>Math</p>
+            </div> 
+            
+            <!--Pagination -->
+            <div id="pagination">
+                <a><img src="../images/category/left_arrow.png" alt="left-arrow"></a>
+
+                <div class="pagination-list">
+                    <a class="pagination-number"><p>1</p></a>
+                    <a class="pagination-number"><p>2</p></a>
+                    <a class="pagination-number"><p>3</p></a>
+                </div>
+
+                <a><img src="../images/category/right_arrow.png" alt="right-arrow"></a>
+            </div>
         </div>
     </section>
 

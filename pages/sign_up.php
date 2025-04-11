@@ -36,6 +36,7 @@ if(!isset($_SESSION))
                     unset($_SESSION['error_message']); // Clear the message after displaying it
                 }
             ?>
+
             <input type="password" placeholder="Password" id="password" name="Password">
 
             <!--- Password Validation -->
@@ -54,7 +55,7 @@ if(!isset($_SESSION))
             <input id="check" type="checkbox">
             See password
         </div>
-        <button type="submit" id="sign_in_button">Sign up</button></b>
+        <button type="submit" id="sign_in_button">Sign up</button></b> <!-- Leads to index.php?page=role to get role -->
         <p id="or">or</p>
         <div class="social_image">
             <img src="../images/sign in/google.png" alt="google" id="google_icon">
