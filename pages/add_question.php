@@ -14,17 +14,19 @@
 
     <h1 id="question-title">Add Question</h1>
 
-   <form id="question-area" enctype="multipart/form-data">
+   <form id="question-area" enctype="multipart/form-data" method="POST" action="../logical/add_q_process.php">
         <!-- Category selection -->
         <div class="choose-category">
             <label>Choose a category</label>
-            <select>
+            <select name='old-category'>
+                <!-- Do later, echo unique  -->
                 <option>Math</option>
                 <option>Physics</option>
                 <option>Chemistry</option>
+                <option>History</option>
             </select>
             <p id="a-new-category">Have a new category? <span id="add-category">Click here!</span></p>
-            <input id="new-category" placeholder="Enter new category" style="display: none">
+            <input id="new-category" placeholder="Enter new category" style="display: none" name="new-category">
         </div>
 
         <!-- Question selection -->
@@ -32,43 +34,43 @@
             <!-- Image upload -->
             <div class="image-upload">
                 <label class="image-label">
-                    <img id="question-image" src="../images/add_question/image.png">
+                    <img id="question-image" src="../images/question/default_question.png">
                     <p>Supported formats: JPEG, PNG, GIF (Max size: 2MB).</p>
                 </label>
-                <input id="file-upload" type="file" accept=".jpeg,.png,.gif">
+                <input id="file-upload" type="file" accept=".jpeg, .png, .gif, .jpg" name="Question_image">
             </div>
 
             <textarea class="enter-question" name="question[]" placeholder="Enter question"></textarea>
             <div class="question-choice">
                 <div class="answers">
-                    <input type="radio">
+                    <input type="radio" name='Is_answer' value='1'>
                     <label>
                         <p>A.</p>
-                        <textarea placeholder="Enter choice"></textarea>
+                        <textarea placeholder="Enter choice" name="question[]"></textarea>
                     </label>
                 </div>
 
                 <div class="answers">
-                    <input type="radio">
+                    <input type="radio" name='Is_answer' value='2'>
                     <label>
                         <p>B.</p>
-                        <textarea placeholder="Enter choice"></textarea>
+                        <textarea placeholder="Enter choice" name="question[]"></textarea>
                     </label>
                 </div>
 
                 <div class="answers">
-                    <input type="radio">
+                    <input type="radio" name='Is_answer' value='3'>
                     <label>
                         <p>C.</p>
-                        <textarea placeholder="Enter choice"></textarea>
+                        <textarea placeholder="Enter choice" name="question[]"></textarea>
                     </label>
                 </div>
               
                 <div class="answers">
-                    <input type="radio">
+                    <input type="radio" name='Is_answer' value='4'>
                     <label>
                         <p>D.</p>
-                        <textarea placeholder="Enter choice"></textarea>
+                        <textarea placeholder="Enter choice" name="question[]"></textarea>
                     </label>
                 </div>
             </div>
@@ -79,6 +81,18 @@
         </div>
 
         <button type="submit">Submit</button>
+        <?php 
+        // Display error
+            if (isset($_SESSION['error_message'])) {
+                echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                unset($_SESSION['error_message']); // Clear the message after displaying it
+            }
+            if (isset($_SESSION['success_message'])) {
+                echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+                unset($_SESSION['success_message']); // Clear the message after displaying it
+            }
+        ?>
+        </div>
    </form>
 
    <script src="../js/Page/add_question.js"></script>

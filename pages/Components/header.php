@@ -18,6 +18,14 @@ if(!isset($_SESSION))
             <a href="index.php?page=landing_page">HOME</a>
             <a href="index.php?page=explore">EXPLORE</a>
             <a href="index.php?page=contact">CONTACT</a>
+            <?php 
+            if (isset($_SESSION['User_ID']) && $_SESSION['is_admin'] == TRUE) {
+                echo '<nav id="navigation">';
+                    echo '<a href="index.php?page=test_management">YOUR TESTS</a>';
+                    echo '<a href="index.php?page=student_management">STUDENTS</a>';
+                echo '</nav>';
+                }
+            ?>
         </nav>
         <?php 
         if (isset($_SESSION['User_ID'])) {
@@ -29,12 +37,7 @@ if(!isset($_SESSION))
         }
         ?>
 
-        <!-- Set admin header -->
-        <!-- <nav id="navigation">
-            <a href="index.php?page=landing_page">HOME</a>
-            <a href="index.php?page=test_management">YOUR TESTS</a>
-            <a href="index.php?page=student_management">STUDENTS</a>
-        </nav> -->
+        
     </header>
 </body>
 </html>

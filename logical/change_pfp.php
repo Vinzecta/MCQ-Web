@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["pfp_image"]["name"]))
             header('Location: ' . $_SERVER['HTTP_REFERER']);
     }
 
-    if($_FILES["pfp_image"]["size"] > 150000) {
+    if($_FILES["pfp_image"]["size"] > 2000000) {
         $_SESSION['error_message'] = 'File to large. Try again';
         header('Location: ' . $_SERVER['HTTP_REFERER']);
         exit;
