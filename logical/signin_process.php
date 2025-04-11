@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['User_name'] = $user['User_name'];
                     $_SESSION['Email'] = $user['Email'];
                     $_SESSION['PFP_URL'] = $user['PFP_URL'];
-                    $_SESSION['Admin_ID'] = $student['Admin_ID'];
+                    $_SESSION['Admin_ID'] = $admin['Admin_ID'];
                     $_SESSION['is_admin'] = TRUE;
                 }
                 $connection->close();
