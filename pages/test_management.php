@@ -251,6 +251,10 @@
         </div>
     </section>
 
+    <?php
+        include ("./Components/add_section.php");
+    ?>
+
     <script src="../js/Page/category.js"></script>
     <script src="../js/Page/explore.js"></script>
 
