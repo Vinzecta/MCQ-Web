@@ -34,7 +34,9 @@
             <!-- Image upload -->
             <div class="image-upload">
                 <label class="image-label">
-                    <img id="question-image" src="../images/question/default_question.png">
+                    <div class="image-label-container">
+                        <img id="question-image" src="../images/question/default_question.png">
+                    </div>
                     <p>Supported formats: JPEG, PNG, GIF (Max size: 2MB).</p>
                 </label>
                 <input id="file-upload" type="file" accept=".jpeg, .png, .gif, .jpg" name="Question_image">
@@ -76,9 +78,9 @@
             </div>
         </div>
 
-        <div id="more-question">
+        <!-- <div id="more-question">
             <p>Add question</p>
-        </div>
+        </div> -->
 
         <button type="submit">Submit</button>
         <?php 
