@@ -22,15 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
         expand_section.style.display = "none";
     });
 
-    more_question.addEventListener("click", function() {
-        const clone = questions.cloneNode(true);
+    // more_question.addEventListener("click", function() {
+    //     const clone = questions.cloneNode(true);
 
-        clone.querySelectorAll("textarea").forEach(el => el.value = "");
-        clone.querySelectorAll("input[type='radio']").forEach(el => {
-            el.checked = false;
-        });
-        clone.querySelectorAll("input[type='file']").forEach(el => el.value = "");
+    //     clone.querySelectorAll("textarea").forEach(el => el.value = "");
+    //     clone.querySelectorAll("input[type='radio']").forEach(el => {
+    //         el.checked = false;
+    //     });
+    //     clone.querySelectorAll("input[type='file']").forEach(el => el.value = "");
 
-        more_question.parentNode.insertBefore(clone, more_question);
-    });
+    //     more_question.parentNode.insertBefore(clone, more_question);
+    // });
 });

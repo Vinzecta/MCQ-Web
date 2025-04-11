@@ -76,9 +76,9 @@
             </div>
         </div>
 
-        <div id="more-question">
+        <!-- <div id="more-question">
             <p>Add question</p>
-        </div>
+        </div> -->
 
         <button type="submit">Submit</button>
         <?php 
