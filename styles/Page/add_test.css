@@ -1,5 +1,6 @@
 @import url("add_question.css");
 @import url("../Component/pagination.css");
+@import url("../Component/search.css");
 
 body, html {
     font-family: "Outfit", sans-serif;
@@ -124,4 +125,29 @@ body, html {
 .question-information a:hover {
     font-weight: bold;
     background-color: rgb(78, 78, 243);
+}
+
+#accept-question {
+    margin: auto;
+}
+
+#select-question {
+    text-align: center;
+    font-size: 50px;
+}
+
+#question-selection button {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(38, 38, 243);
+    border: none;
+}
+
+#question-selection button:hover {
+    background-color: rgb(78, 78, 243);
+    font-weight: bold;
 }
