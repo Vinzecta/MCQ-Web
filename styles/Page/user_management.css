@@ -1,0 +1,109 @@
+@import url("../Component/pagination.css");
+body, html {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#users {
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.user h3 {
+    text-align: center;
+    white-space: nowrap;    
+    overflow: hidden;           
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.user-info span {
+    white-space: normal;      
+    overflow-wrap: break-word;    
+    word-break: break-word;
+}
+
+.user-info p {
+    text-align: center;
+}
+
+.active {
+    color: greenyellow;
+}
+
+.disable {
+    color: red;
+}
+
+.disable-button {
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.disable-button:hover {
+    font-weight: bold;
+    background-color: rgb(240, 82, 82);
+    cursor: pointer;
+}
+
+#users-management {
+    font-size: 50px;
+    text-align: center;
+}
+
+.active-button {
+    padding: 10px 20px 10px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: greenyellow;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.active-button:hover {
+    font-weight: bold;
+    background-color: rgb(165, 215, 89);
+}
+
+.status-text {
+    color: greenyellow;
+}
