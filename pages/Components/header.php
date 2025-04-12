@@ -22,6 +22,7 @@ if(!isset($_SESSION))
             if (isset($_SESSION['User_ID']) && $_SESSION['is_admin'] == TRUE) {
                 echo '<nav id="navigation">';
                     echo '<a href="index.php?page=test_management">YOUR TESTS</a>';
+                    echo '<a href="index.php?page=question_management">YOUR QUESTIONS</a>';
                     echo '<a href="index.php?page=student_management">STUDENTS</a>';
                 echo '</nav>';
                 }

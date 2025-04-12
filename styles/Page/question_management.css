@@ -1,0 +1,48 @@
+@import url("add_test.css");
+@import url("../Component/pop_up.css");
+
+#question-management {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.modify-section a {
+    padding: 15px 20px 15px 20px;
+    font-family: "Outfit", sans-serif;
+    border-radius: 15px;
+    font-size: 15px;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    background-color: rgb(38, 38, 243);
+    border: none;
+    text-decoration: none;
+}
+
+.modify-section a:hover {
+    background-color: rgb(78, 78, 243);
+    font-weight: bold;
+}
+
+.delete-question{
+    font-size: 15px;
+    width: fit-content;
+    height: fit-content;
+    background-color: red;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 15px;
+}
+
+.modify-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.delete-question:hover {
+    font-weight: bold;
+    background-color: rgb(240, 82, 82);
+}
