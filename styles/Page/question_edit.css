@@ -1,0 +1,7 @@
+@import url("add_question.css");
+
+#question-edit {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10%;
+}

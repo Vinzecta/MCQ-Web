@@ -19,221 +19,252 @@
     ?>
 
     <section class="categories">
-        <div class="category-title">
-            <h1>Categories</h1>
-            <div id="display">
-                <img src="../images/category/sort.png" alt="display">
-            </div>
-        </div>  
-
         <div class="category-display">
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
+                    </div>
                 </div>
             </a>
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <a class="category" href="index.php?page=edit_test">
-                <div class="category-image">
-                    <img src="../images/explore/math.jpg" alt="math">
-                </div>
                 <div class="quiz-information">
-                        <h3>Math</h3>
+                    <h3>Math</h3>
+                    <div class="quiz-info">
                         <p>Author: abc</p>
                         <p>Day created: 01/02/2025</p>
+                        <p>Category: Math</p>
+                        <p>Total attempts: 100</p>
+                        <p>Average grade: 80</p>
                     </div>
+                </div>
             </a>  
 
             <!--Pagination -->
