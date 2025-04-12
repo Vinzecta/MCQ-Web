@@ -13,3 +13,47 @@ body, html {
     text-align: center;
     font-size: 50px;
 }
+
+.categories {
+    margin-top: 5%;
+}
+
+.category {
+    width: 40%;
+    transition: transform 0.3s ease;
+}
+
+.quiz-information h3 {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;    
+    overflow: hidden;           
+    text-overflow: ellipsis;
+}
+
+.quiz-information p{
+    margin: 0;
+}
+
+.quiz-info {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.quiz-info p {
+    width: 45%;
+    text-align: left;
+    white-space: normal;      
+    overflow-wrap: break-word;    
+    word-break: break-word; 
+}
+
+.quiz-information {
+    width: 100%;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
