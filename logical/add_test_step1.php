@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
         $_SESSION['test_name'] = $test_name;
         $_SESSION['test_category'] = $test_category;
         $_SESSION['test_description'] = $test_description;
-        $_SESSION['test_time_limit'] = $test_time_limit;
+        $_SESSION['test_time_limit'] = (int) $test_time_limit;
         $_SESSION['info'] = 'add_question';
     }  
     else {

@@ -26,7 +26,8 @@ CREATE TABLE Test (
     Time_allowed INT, -- This is minutes
     Category VARCHAR(50) NOT NULL,
     Admin_ID INT NOT NULL,
-    FOREIGN KEY (Admin_ID) REFERENCES Admins(Admin_ID)
+    FOREIGN KEY (Admin_ID) REFERENCES Admins(Admin_ID),
+    descriptions text
 );
 -- Question --
 CREATE TABLE Question (
