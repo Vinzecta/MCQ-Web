@@ -10,6 +10,8 @@
 <body>
     <?php
         require_once "./Components/header.php";
+        require_once "../logical/database_connect.php";
+        require_once "../logical/function.php";
     ?>
 
     <h1 id="question-title">Add Question</h1>
@@ -24,6 +26,15 @@
                 <option value='Physics'>Physics</option>
                 <option value='Chemistry'>Chemistry</option>
                 <option value='History'>History</option>
+                <?php 
+                $unique_category_query = "SELECT DISTINCT Category FROM Question";
+                $categories = $connection->query($unique_category_query);
+                if($categories->num_rows > 0) {
+                    while($category = $categories->fetch_assoc()) { 
+                        echo '<option value="' . $category['Category'] . '">' . $category['Category'] . '</option>';
+                    }
+                }
+                ?>
             </select>
             <p id="a-new-category">Have a new category? <span id="add-category">Click here!</span></p>
             <input id="new-category" placeholder="Enter new category" style="display: none" name="new_category">

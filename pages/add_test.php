@@ -87,7 +87,7 @@ else {
                     Question.Question_ID = Choice.Question_ID";
     $questions_query = ($category == 'All') 
     ? $base_query . ";"
-    : $base_query . " WHERE Question.Category = $category OR Question.Category LIKE $category;";
+    : $base_query . " WHERE Question.Category = '$category' OR Question.Category LIKE '%$category%';";
 
     $questions = $connection->query($questions_query);
     if($questions->num_rows > 0) {
