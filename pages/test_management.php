@@ -9,13 +9,13 @@
 </head>
 <body>
     <?php
-        include ("./Components/header.php");
+        require_once ("./Components/header.php");
     ?>
 
     <h1 id="test-management">Test Management</h1>
 
     <?php
-        include ("./Components/search.php");
+        require_once ("./Components/search.php");
     ?>
 
     <section class="categories">
@@ -252,14 +252,14 @@
     </section>
 
     <?php
-        include ("./Components/add_section.php");
+        require_once ("./Components/add_section.php");
     ?>
 
     <script src="../js/Page/category.js"></script>
     <script src="../js/Page/explore.js"></script>
 
     <?php
-        include ("./Components/footer.php");
+        require_once ("./Components/footer.php");
     ?>
 </body>
 </html>

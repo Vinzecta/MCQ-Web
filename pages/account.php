@@ -22,7 +22,7 @@
 </head>
 <body>
     <?php 
-        include "./Components/header.php";
+        require_once "./Components/header.php";
     ?>
 
     <section id="profile">
@@ -152,7 +152,7 @@
     </section>
 
     <?php
-        include "./Components/footer.php";
+        require_once "./Components/footer.php";
     ?>
 </body>
 </html>

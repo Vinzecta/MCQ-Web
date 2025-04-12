@@ -9,8 +9,8 @@
 </head>
 <body>
     <?php
-        include "./Components/header.php";
-        include "./Components/search.php";
+        require_once "./Components/header.php";
+        require_once "./Components/search.php";
     ?>
 
     <section id="popular">
@@ -498,7 +498,7 @@
     </section>
 
     <?php
-        include "./Components/footer.php";
+        require_once "./Components/footer.php";
     ?>
 
     <script src="../js/Page/explore.js"></script>
