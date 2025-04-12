@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        include "./Components/header.php";
+        require_once "./Components/header.php";
     ?>
 
     <h1 id="question-title">Add Question</h1>
@@ -18,15 +18,15 @@
         <!-- Category selection -->
         <div class="choose-category">
             <label>Choose a category</label>
-            <select name='old-category'>
+            <select name='old_category'>
                 <!-- Do later, echo unique  -->
-                <option>Math</option>
-                <option>Physics</option>
-                <option>Chemistry</option>
-                <option>History</option>
+                <option value='Math'>Math</option>
+                <option value='Physics'>Physics</option>
+                <option value='Chemistry'>Chemistry</option>
+                <option value='History'>History</option>
             </select>
             <p id="a-new-category">Have a new category? <span id="add-category">Click here!</span></p>
-            <input id="new-category" placeholder="Enter new category" style="display: none" name="new-category">
+            <input id="new-category" placeholder="Enter new category" style="display: none" name="new_category">
         </div>
 
         <!-- Question selection -->
@@ -98,7 +98,7 @@
    <script src="../js/Page/add_question.js"></script>
 
     <?php
-        include "./Components/footer.php";
+        require_once "./Components/footer.php";
     ?>
 </body>
 </html>
