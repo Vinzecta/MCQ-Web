@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        include "./Components/header.php";
+        require_once "./Components/header.php";
     ?>
 
     <section id="quiz-description">
@@ -31,7 +31,7 @@
     </section>
 
     <?php
-        include "./Components/footer.php";
+        require_once "./Components/footer.php";
     ?>
 
     <script src="../js/Page/quiz_detail.js"></script>

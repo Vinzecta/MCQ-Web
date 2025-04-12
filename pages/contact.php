@@ -15,7 +15,7 @@ if(!isset($_SESSION))
 </head>
 <body>
     <?php
-        include "./Components/header.php";
+        require_once "./Components/header.php";
     ?>
 
     <h1 id="contact-us">Contact Us</h1>
@@ -69,7 +69,7 @@ if(!isset($_SESSION))
     </section>
 
     <?php
-        include "./Components/footer.php";
+        require_once "./Components/footer.php";
     ?>
 </body>
 </html>

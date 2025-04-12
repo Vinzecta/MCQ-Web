@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        include "./Components/header.php";
+        require_once "./Components/header.php";
     ?>
     
     <section id="banner">
@@ -160,7 +160,7 @@
         </div>  
 
         <?php
-        include "./Components/footer.php";
+        require_once "./Components/footer.php";
         ?>
     </section>
 </body>
