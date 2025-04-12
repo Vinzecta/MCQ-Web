@@ -21,7 +21,6 @@
         <div class="choose-category">
             <label>Choose a category</label>
             <select name='old_category'>
-                <!-- Do later, echo unique  -->
                 <option value='Math'>Math</option>
                 <option value='Physics'>Physics</option>
                 <option value='Chemistry'>Chemistry</option>

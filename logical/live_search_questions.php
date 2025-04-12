@@ -77,7 +77,7 @@ if(isset($_GET["question_search"])) {
                     echo '</div>';
                 echo '</div>';
                 echo '<div class="modify-section">';
-                    echo '<a href="index.php?page=question_edit">Edit</a>';
+                echo '<a href="index.php?page=question_edit&question_id=' . $question['Question_ID'] . '">Edit</a>';
                     echo '<p class="delete-question">Delete</p>';
                 echo '</div>';
             echo '</div>';

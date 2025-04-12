@@ -17,7 +17,17 @@
     <?php
         require_once "./Components/search_questions.php";
 
-
+     
+    // Display error
+        if (isset($_SESSION['error_message'])) {
+            echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+            unset($_SESSION['error_message']); // Clear the message after displaying it
+        }
+        if (isset($_SESSION['success_message'])) {
+            echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+            unset($_SESSION['success_message']); // Clear the message after displaying it
+        }
+        
         if(!isset($_SESSION)) 
         { 
             session_start(); 
@@ -131,7 +141,7 @@
                         echo '</div>';
                     echo '</div>';
                     echo '<div class="modify-section">';
-                        echo '<a href="index.php?page=question_edit">Edit</a>';
+                        echo '<a href="index.php?page=question_edit&question_id=' . $question['Question_ID'] . '">Edit</a>';
                         echo '<p class="delete-question">Delete</p>';
                     echo '</div>';
                 echo '</div>';
