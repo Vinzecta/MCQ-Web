@@ -15,10 +15,7 @@
         <div class="sort-area" id="sort-aspect">
             <p>Sort by</p>
             <select>
-                <option>Average Grade</option>
-                <option>Category</option>
                 <option>Name</option>
-                <option>No of Attempts</option>
             </select>
         </div>
 
@@ -27,6 +24,15 @@
             <select>
                 <option>Ascending</option>
                 <option>Descending</option>
+            </select>
+        </div>
+
+        <div class="sort-area">
+            <p>Categories</p>
+            <select>
+                <option>Math</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
             </select>
         </div>
     </section>

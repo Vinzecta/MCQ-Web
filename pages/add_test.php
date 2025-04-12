@@ -70,19 +70,36 @@
 
         }
     ?>
-        
-   
-    <?php
-        require_once "./Components/search.php";
-    ?>
+    
+    <!-- Add questions -->
+    <h1 id="select-question">Select Questions</h1>
+
     <!-- Delete this after done above -->
     <form id="question-selection">
         <div class="questions">
             <p class="question-section">What is 1 + 1?</p>
             <div class="question-information">
-                <a>View</a> <!-- Navigate to index.php?page=question_detail -->
-                <input type="checkbox">
+                <div class="answers">
+                    <p>A.</p>
+                    <p>1</p>
+                </div>
+
+                <div class="answers">
+                    <p>B.</p>
+                    <p>2</p>
+                </div>
+
+                <div class="answers">
+                    <p>C.</p>
+                    <p>3</p>
+                </div>
+
+                <div class="answers">
+                    <p>D.</p>
+                    <p>4</p>
+                </div> 
             </div>
+            <input id="accept-question" type="checkbox">
         </div>
         
         <!--Pagination -->
@@ -95,6 +112,7 @@
             </div>
             <a><img src="../images/category/right_arrow.png" alt="right-arrow"></a>
         </div>
+        <button type="submit">Add Test</button>
     </form>
 
 

@@ -20,3 +20,14 @@
     left: 96%;
     bottom: 28px;
 }
+
+#sort-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sort-area {
+    display: flex;
+    gap: 20px;
+}
