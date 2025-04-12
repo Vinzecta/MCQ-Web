@@ -154,7 +154,6 @@
     </section>
 
     <script type="module" src="../js/Page/question_management.js"></script>
-
     <?php
         include "./Components/footer.php";
     ?>
