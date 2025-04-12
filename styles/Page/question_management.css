@@ -26,12 +26,13 @@
 }
 
 .delete-question{
-    font-size: 15px;
+    margin-left: 20px;
+    font-size: 10px;
     width: fit-content;
     height: fit-content;
     background-color: red;
     color: white;
-    padding: 15px 20px 15px 20px;
+    padding: 5px 10px;
     border: none;
     border-radius: 15px;
 }

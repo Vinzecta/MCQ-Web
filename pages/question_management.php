@@ -142,7 +142,10 @@
                     echo '</div>';
                     echo '<div class="modify-section">';
                         echo '<a href="index.php?page=question_edit&question_id=' . $question['Question_ID'] . '">Edit</a>';
-                        echo '<p class="delete-question">Delete</p>';
+                        echo '<form method="POST" action="../logical/delete_questions.php" enctype="multipart/form-data">';
+                            $_SESSION['delete_book_id'] = $question['Question_ID'];
+                            echo '<input class="delete-question" type="submit" value="DELETE">';
+                        echo '</form>';
                     echo '</div>';
                 echo '</div>';
             }
@@ -163,7 +166,7 @@
         <?php pagination($total_pages, $num_adjacents_page); ?>
     </section>
 
-    <script type="module" src="../js/Page/question_management.js"></script>
+    <!-- <script type="module" src="../js/Page/question_management.js"></script> -->
     <?php
         include "./Components/footer.php";
     ?>
