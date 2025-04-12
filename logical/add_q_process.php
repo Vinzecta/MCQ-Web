@@ -15,9 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
         }
     }
     $question_name = sanitize_input($_POST['question'][0]);
-    $category = sanitize_input($_POST['old-category']);
-    if(isset($_POST['new-category'])) {
-        $category = sanitize_input($_POST['new-category']);
+    $category = sanitize_input($_POST['old_category']);
+    if(isset($_POST['new_category']) && !empty(trim($_POST['new_category']))) {
+        $category = sanitize_input($_POST['new_category']);
     }
     $admin_id = $_SESSION['Admin_ID'];
 
