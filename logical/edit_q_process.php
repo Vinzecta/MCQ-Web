@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
             case 'image/png': $ext = '.png'; break;
             case 'image/gif': $ext = '.gif'; break;
             default:
-                $_SESSION['error_message'] = 'Add question successfully but wrong file type, only .jpg, .png and .gif are allowed. Try again';
+                $_SESSION['error_message'] = 'Edit question successfully but wrong file type, only .jpg, .png and .gif are allowed. Try again';
                 header('Location: ' . $_SERVER['HTTP_REFERER']);
                 exit;
         }
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
         $Question_URL = "../images/question/" . $filename;
 
         if (!move_uploaded_file($_FILES["Question_image"]["tmp_name"], $Question_URL)) {
-            $_SESSION['error_message'] = 'Add question successfully but can not upload file, try again';
+            $_SESSION['error_message'] = 'Edit question successfully but can not upload file, try again';
             header('Location: ' . $_SERVER['HTTP_REFERER']);
             exit;
         }
@@ -82,6 +82,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SES
     $update_question_url_stmt = $connection->prepare($update_question_url_query);
     $update_question_url_stmt->bind_param("si", $Question_URL, $_SESSION['edit_question_id']);
     $update_question_url_stmt->execute();
-    $_SESSION['success_message'] = 'Add questions successfully';
+    $_SESSION['success_message'] = 'Edit questions successfully';
 }
 header('Location: ' . $_SERVER['HTTP_REFERER']);
