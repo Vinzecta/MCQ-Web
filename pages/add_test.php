@@ -38,6 +38,14 @@
     </section>
 
     <?php 
+    if (isset($_SESSION['error_message'])) {
+        echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+        unset($_SESSION['error_message']); // Clear the message after displaying it
+    }
+    if (isset($_SESSION['success_message'])) {
+        echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+        unset($_SESSION['success_message']); // Clear the message after displaying it
+    }
 if($info == 'basic') {
     echo '<form id="test-information" method="POST" action="../logical/add_test_step1.php">';
         echo '<h2>Test Information</h2>';
@@ -61,11 +69,7 @@ if($info == 'basic') {
         
         echo '<button type="submit">Next Step</button>';
     echo '</form>';
-    // first display questions with same categorys
-    // add sort and search function with ajax
-    // each question displayed have a check box with value of that question id
-    // if checked add to array, if unchecked removed array
-    // done chosing sent to another file to process and create tests
+
     
 }
 else {
