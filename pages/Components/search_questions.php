@@ -27,7 +27,7 @@ require_once "../logical/function.php";
 </head>
 <body>
     <section id="search-bar">
-        <input id="search" type="text" placeholder="Search">
+        <input id="search" type="text" placeholder="Search" onkeyup="show_result_questions(this.value, <?php echo $_SESSION['page_number'];?>)">
         <img src="../images/explore/search.png" alt="Search icon">
     </section>
 
@@ -68,5 +68,6 @@ require_once "../logical/function.php";
         </div>
         <input id="confirm_sort" type="submit" value="Sort" />
     </form>
+    <script src="../js/live_search/live_search_questions.js"></script>
 </body>
 </html>
