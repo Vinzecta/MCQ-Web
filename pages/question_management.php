@@ -10,6 +10,11 @@
 <body>
     <?php
         require_once "./Components/header.php";
+        $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
+        if(!isset($_SESSION['User_ID']) || $_SESSION['is_admin'] != TRUE) {
+            header("Location: $base_url/pages/index.php?page=sign_in");
+            exit;
+        }
     ?>
 
     <h1 id="question-management">Questions Management</h1>
@@ -88,7 +93,7 @@
         }
 
         // Append sorting and pagination
-        $current_page_query .= ($_SESSION["sort_by"] != "_" && $_SESSION["sort_order"] != "_")
+        $current_page_query .= ($_SESSION["sort_by"] == "Question_name" && $_SESSION["sort_order"] != "_")
             ? " ORDER BY " . $_SESSION["sort_by"] . " " . $_SESSION["sort_order"] . " LIMIT $rows_per_page OFFSET $offset"
             : " LIMIT $rows_per_page OFFSET $offset";
         $current_page_result = $connection->query($current_page_query);
@@ -143,8 +148,7 @@
                     echo '<div class="modify-section">';
                         echo '<a href="index.php?page=question_edit&question_id=' . $question['Question_ID'] . '">Edit</a>';
                         echo '<form method="POST" action="../logical/delete_questions.php" enctype="multipart/form-data">';
-                            $_SESSION['delete_book_id'] = $question['Question_ID'];
-                            echo '<input class="delete-question" type="submit" value="DELETE">';
+                            echo '<button id="delete-question" type="submit" value="' . $question['Question_ID'] . '" name="DELETE_ID">DELETE</button>';
                         echo '</form>';
                     echo '</div>';
                 echo '</div>';

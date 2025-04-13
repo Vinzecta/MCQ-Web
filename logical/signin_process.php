@@ -50,6 +50,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $_SESSION['Student_ID'] = $student['Student_ID'];
                     $_SESSION['is_admin'] = FALSE;
                     $_SESSION['Student_status'] = $student['Student_status'];
+                    if($student['Student_status'] == 'banned') {
+                        header("Location: $base_url/pages/index.php?page=you_have_been_banned");
+                        exit;
+                    }
                 }
                 else {
                     $admin = $admin_result->fetch_assoc();

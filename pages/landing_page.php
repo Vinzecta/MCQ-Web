@@ -10,6 +10,11 @@
 <body>
     <?php
         require_once "./Components/header.php";
+        $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
+        if(isset($_SESSION['Student_status']) && $_SESSION['Student_status'] == 'banned') {
+            header("Location: $base_url/pages/index.php?page=you_have_been_banned");
+            exit;
+        }
     ?>
     
     <section id="banner">
