@@ -8,6 +8,10 @@
 </head>
 <body>
     <?php
+        if(!isset($_SESSION)) 
+        { 
+            session_start(); 
+        } 
         require_once "./Components/header.php";
         $category = isset($_GET["category"]) ? $_GET["category"] : ''; 
         require_once "./Components/search_quiz.php";

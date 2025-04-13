@@ -9,6 +9,10 @@
 </head>
 <body>
     <?php
+        if(!isset($_SESSION)) 
+        { 
+            session_start(); 
+        } 
         require_once "./Components/header.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(isset($_SESSION['Student_status']) && $_SESSION['Student_status'] == 'banned') {
