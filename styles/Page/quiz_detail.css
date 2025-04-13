@@ -1,74 +1,122 @@
 @import url("../Component/alert.css");
 @import url("../Component/success.css");
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body, html {
     font-family: "Outfit", sans-serif;
-}
-
-html {
     margin: 0;
     padding: 0;
     height: 100%;
-}
-
-#quiz-description {
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    height: 50%;
-    display: flex;
-    gap: 20px;
-}
-
-#quiz-image {
-    width: 30%;
-    height: 100%;
-}
-
-#quiz-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    overflow-x: hidden;
 }
 
-#about-quiz {
-    width: 40%;
-    height: 100%;
+#quiz-section {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
     font-size: 20px;
+    margin-top: 5%;
 }
 
-#about-quiz h1 {
-    font-size: 40px;
+#quiz-information {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+}
+
+#quiz-button {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz-button a {
+    font-family: "Outfit", sans-serif;
+    width: 50%;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(38, 38, 243);
+    border: none;
+    text-align: center;
+}
+
+#quiz-button a:hover {
+    font-weight: bold;
+    background-color: rgb(78, 78, 243);
+}
+
+#quiz-information h1 {
     margin: 0;
 }
 
-.description-hidden {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
+#quiz-information p {
+    margin: 0;
 }
 
-.description-show {
-    overflow-wrap: break-word;
-    word-break: break-word;
-    white-space: normal;
+#your-attempt {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
 }
 
-.show {
-    width: fit-content;
-    padding: 10px 20px 10px 20px;
-    background-color: #1368ce;
+#attempts-information {
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    font-size: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+
+.attempt {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    margin-bottom: 5%;
+}
+
+.attempt p {
     margin: 0;
     font-size: 15px;
-    color: white;
-    display: none;
+    font-weight: bold;
 }
 
-.show:hover {
-    background-color: #3d8ae9;
-    cursor: pointer;
+.attempt h2 {
+    margin: 0;
+}
+
+.label {
+    font-weight: bold;
+    background-color: #f2f2f2;
+    text-align: right;
+}
+
+table tr td {
+    border-style: ridge;
+}
+
+.attempt a {
+    text-decoration: none;
+    font-size: 15px;
+    color: blue;
+}
+
+.attempt a:hover {
+    text-decoration: underline;
 }
