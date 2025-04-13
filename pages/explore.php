@@ -202,68 +202,68 @@
         </div>  
 
         <div class="category-display">
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>  
+            </a>  
         </div>
     </section>
 
@@ -274,68 +274,68 @@
         </div>  
 
         <div class="category-display">
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>  
+            </a>  
         </div>
     </section>
 
@@ -346,68 +346,68 @@
         </div>  
 
         <div class="category-display">
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>
+            </a>
 
-            <div class="category">
+            <a class="category">
                 
                 <div class="quiz-information">
                         <h3>Math</h3>
                         <p>Total attempt:</p>
                         <p class="total-attempts">100</p>
                 </div>
-            </div>  
+            </a>  
         </div>
     </section>
 
