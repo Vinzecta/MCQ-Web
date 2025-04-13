@@ -1,0 +1,56 @@
+@import url("add_question.css");
+
+.image-upload {
+    width: 100%;
+    height: 200px;
+}
+
+.question-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+    margin: auto;
+}
+
+.questions {
+    margin: 0;
+    margin-bottom: 10%;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.enter-question {
+    text-align: center;
+    font-weight: bold;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+label p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.question-choice {
+    justify-content: center;
+}
+
+.answers {
+    width: 40%;
+}
+
+#countdown {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+    text-align: center;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+}
