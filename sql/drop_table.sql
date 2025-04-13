@@ -1,4 +1,4 @@
-DROP TABLE Report;
+DROP TABLE contact;
 DROP TABLE Question_Attempt;
 DROP TABLE Test_Attempt;
 DROP TABLE TestQuestions;
