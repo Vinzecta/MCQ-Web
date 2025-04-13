@@ -23,7 +23,7 @@ if(!isset($_SESSION))
                 echo '<nav id="navigation">';
                     echo '<a href="index.php?page=test_management">YOUR TESTS</a>';
                     echo '<a href="index.php?page=question_management">YOUR QUESTIONS</a>';
-                    echo '<a href="index.php?page=student_management">STUDENTS</a>';
+                    echo '<a href="index.php?page=user_management">STUDENTS</a>';
                 echo '</nav>';
                 }
             ?>

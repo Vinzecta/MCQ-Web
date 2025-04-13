@@ -5,7 +5,7 @@ if (!isset($_SESSION)) {
 require_once "./database_connect.php";
 require_once "./function.php";
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['User_ID']) && $_SESSION['is_admin'] == TRUE) { 
-    $question_id = sanitize_input($_SESSION['delete_book_id']);
+    $question_id = sanitize_input($_POST['DELETE_ID']);
     $retrieve_question_img_query = "SELECT Question_URL FROM Question WHERE Question_ID = ?";
     $retrieve_question_img_stmt = $connection->prepare($retrieve_question_img_query);
     $retrieve_question_img_stmt->bind_param("i", $question_id);
