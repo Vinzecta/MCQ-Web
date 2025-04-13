@@ -55,7 +55,6 @@
             <div class="left-content">
                 <h1>Empower Education: Create Quizzes That Inspire Learning</h1>
                 <p>As an admin, you have the power to shape the learning experience. Easily create and manage quizzes that not only assess students but also help them gain valuable knowledge. Transform ordinary assessments into engaging learning tools that promote understanding, critical thinking, and academic success.</p>
-                <a class="sign-up-button" href="index.php?page=sign_up">Sign up as admin!</a>
             </div>
 
             <div class="right-content">
@@ -64,7 +63,7 @@
         </div>
     </section>
 
-    <section id="popular-quiz">
+    <!-- <section id="popular-quiz">
         <h2>Popular quiz</h2>
         <div id="quizzes">
             <div class="quiz">
@@ -162,7 +161,7 @@
                     <a href="index.php?page=quiz">View</a>
                 </div>
             </div>
-        </div>  
+        </div>   -->
 
         <?php
         require_once "./Components/footer.php";
