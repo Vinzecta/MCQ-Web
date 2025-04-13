@@ -54,3 +54,8 @@ label p {
     background-color: green;
     color: white;
 }
+
+.number-question {
+    text-align: center;
+    font-size: 30px;
+}
