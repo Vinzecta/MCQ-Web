@@ -60,7 +60,7 @@
         <div id="quiz-information">
             <h1><?php echo $test['Test_name']; ?></h1>
             <p>Author: <span><?php echo $test['User_name']; ?></span></p>
-            <p>Time Limit: <span><?php echo $test['Time_allowed']; ?></span></p>
+            <p>Time Limit: <span><?php echo $test['Time_allowed']; ?> minutes</span></p>
             <p>Category: <span><?php echo $test['Category']; ?></span></p>
         </div>
 
@@ -73,114 +73,51 @@
             ?>
         </div>
     </section>
-    
-    <h1 id="your-attempt">Your Attempts: 10</h1>
-    <section id="attempts-information">
-        <div class="attempt">
-            <h2>Attempt 1</h2>
-            <table>
-                <tr>
-                    <td class="label">Date:</td>
-                    <td>Thursday, 9 January, 2025</td>
-                </tr>
+    <?php 
+        if(isset($_SESSION['Student_ID'])) {
+            $count_question_query = "SELECT COUNT(*) AS Question_Count FROM TestQuestions WHERE Test_ID = ?;";
+            $count_question_stmt = $connection->prepare($count_question_query);
+            $count_question_stmt->bind_param('i', $Test_ID);
+            $count_question_stmt->execute();
+            $count_question_result = $count_question_stmt->get_result();
+            $count_question = $count_question_result->fetch_assoc();
 
-                <tr>
-                    <td class="label">Duration:</td>
-                    <td>6 minutes 00 secs</td>
-                </tr>
 
-                <tr>
-                    <td class="label">Score:</td>
-                    <td>10.0/10.0</td>
-                </tr>
-            </table>
-            <a>View</a> <!-- View attempted quiz -->
-        </div>
+            $Student_ID = $_SESSION['Student_ID'];
+            $attempt_query = "SELECT * FROM Test_Attempt WHERE Test_ID = ? AND Student_ID = ?;";
+            $attempt_stmt = $connection->prepare($attempt_query);
+            $attempt_stmt->bind_param('ii', $Test_ID, $Student_ID); // Bind parameters (both are integers)
+            $attempt_stmt->execute();
+            $attempt_result = $attempt_stmt->get_result();
+            if ($attempt_result->num_rows > 0) { 
+                echo '<h1 id="your-attempt">Your Attempts: ' . $attempt_result->num_rows . '</h1>';
+                echo '<section id="attempts-information">';
+                    $attempt_num = 1;
+                    while($attempt = $attempt_result->fetch_assoc()) {
+                        echo '<div class="attempt">';
+                            echo '<h2>Attempt ' . $attempt_num . '</h2>';
+                            echo '<table>';
+                                echo '<tr>';
+                                    echo '<td class="label">Date:</td>';
+                                    echo '<td>' . $attempt['Attempt_Date'] . '</td>';
+                                echo '</tr>';
 
-        <div class="attempt">
-            <h2>Attempt 2</h2>
-            <table>
-                <tr>
-                    <td class="label">Date:</td>
-                    <td>Thursday, 9 January, 2025</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Duration:</td>
-                    <td>6 minutes 00 secs</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Score:</td>
-                    <td>10.0/10.0</td>
-                </tr>
-            </table>
-            <a>View</a> <!-- View attempted quiz -->
-        </div>
-
-        <div class="attempt">
-            <h2>Attempt 3</h2>
-            <table>
-                <tr>
-                    <td class="label">Date:</td>
-                    <td>Thursday, 9 January, 2025</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Duration:</td>
-                    <td>6 minutes 00 secs</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Score:</td>
-                    <td>10.0/10.0</td>
-                </tr>
-            </table>
-            <a>View</a> <!-- View attempted quiz -->
-        </div>
-
-        <div class="attempt">
-            <h2>Attempt 4</h2>
-            <table>
-                <tr>
-                    <td class="label">Date:</td>
-                    <td>Thursday, 9 January, 2025</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Duration:</td>
-                    <td>6 minutes 00 secs</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Score:</td>
-                    <td>10.0/10.0</td>
-                </tr>
-            </table>
-            <a>View</a> <!-- View attempted quiz -->
-        </div>
-
-        <div class="attempt">
-            <h2>Attempt 5</h2>
-            <table>
-                <tr>
-                    <td class="label">Date:</td>
-                    <td>Thursday, 9 January, 2025</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Duration:</td>
-                    <td>6 minutes 00 secs</td>
-                </tr>
-
-                <tr>
-                    <td class="label">Score:</td>
-                    <td>10.0/10.0</td>
-                </tr>
-            </table>
-            <a>View</a> <!-- View attempted quiz -->
-        </div>
-    </section>
+                                echo '<tr>';
+                                    echo '<td class="label">Score:</td>';
+                                    echo '<td>' . $attempt['Score'] . ' / ' . $count_question['Question_Count'] . ' </td>';
+                                echo '</tr>';
+                                
+                            echo '</table>';
+                            echo '<a href="index.php?page=view_quiz_attempt&quiz_id=' . $attempt['Test_ID'] . '&attempt_id=' . $attempt['Attempt_ID'] . '">View</a>';
+                        echo '</div>';
+                        $attempt_num+=1;
+                    }
+                
+                echo '</section>';
+            }
+        }        
+        
+    ?>
 
     <?php
         require_once "./Components/footer.php";
