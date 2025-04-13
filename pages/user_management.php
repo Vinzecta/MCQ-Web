@@ -70,7 +70,7 @@
                     }
                 }
                 if ($_SESSION["page_number"] < $total_pages) {
-                    echo '<a href="index.php?page=question_management&page_number=' . ($_SESSION["page_number"] + 1) . '"><img src="../images/category/right_arrow.png" alt="right-arrow"></a>';
+                    echo '<a href="index.php?page=user_management&page_number=' . ($_SESSION["page_number"] + 1) . '"><img src="../images/category/right_arrow.png" alt="right-arrow"></a>';
                 }
             echo '</div>';
         }
