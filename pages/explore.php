@@ -15,6 +15,8 @@
             header("Location: $base_url/pages/index.php?page=you_have_been_banned");
             exit;
         }
+        require_once "../logical/database_connect.php";
+        require_once "../logical/function.php";
     ?>
 
     <!-- Search bar -->
@@ -23,7 +25,7 @@
         <img src="../images/explore/search.png" alt="Search icon">
     </section>
 
-    <section id="popular">
+    <!-- <section id="popular">
         <div class="category-title" id="popular-quiz">
             <h1>Top popular quizzes</h1>
         </div>
@@ -149,267 +151,59 @@
                 </div>
             </a>   
         </div>
-    </section>
+    </section> -->
 
     <section class="categories">
         <div class="category-title">
             <h1>Categories</h1>
             <a href="index.php?page=category">View all</a>
         </div>  
-
+        
         <div class="category-display">
-            <a class="category">
-                
-                <p>Math</p>
-            </a>
-
-            <a class="category">
-                
-                <p>Math</p>
-            </a>
-
-            <a class="category">
-                
-                <p>Math</p>
-            </a>
-
-            <a class="category">
-                
-                <p>Math</p>
-            </a>
-
-            <a class="category">
-                
-                <p>Math</p>
-            </a>
-
-            <a class="category">
-                
-                <p>Math</p>
-            </a>
-
-            <a class="category">
-                
-                <p>Math</p>
-            </a>  
+            <?php 
+            $unique_category_query = "SELECT DISTINCT Category FROM Test ORDER BY RAND() LIMIT 8;";
+            $categories = $connection->query($unique_category_query);
+            if($categories->num_rows > 0) {
+                while($category = $categories->fetch_assoc()) { 
+                    echo '<a class="category">';
+                        echo '<p>' . $category['Category'] . '</p>';
+                    echo '</a>';
+                }
+            }
+            ?>
         </div>
     </section>
 
-    <section class="categories">
-        <div class="category-title">
-            <h1>Math</h1>
-            <a href="index.php?page=quiz">View all</a>
-        </div>  
-
-        <div class="category-display">
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>  
-        </div>
-    </section>
-
-    <section class="categories">
-        <div class="category-title">
-            <h1>Chemistry</h1>
-            <a href="index.php?page=category">View all</a>
-        </div>  
-
-        <div class="category-display">
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>  
-        </div>
-    </section>
-
-    <section class="categories">
-        <div class="category-title">
-            <h1>Math</h1>
-            <a href="index.php?page=category">View all</a>
-        </div>  
-
-        <div class="category-display">
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>
-
-            <a class="category">
-                
-                <div class="quiz-information">
-                        <h3>Math</h3>
-                        <p>Total attempt:</p>
-                        <p class="total-attempts">100</p>
-                </div>
-            </a>  
-        </div>
-    </section>
+    <?php 
+        $unique_category_query = "SELECT DISTINCT Category FROM Test ORDER BY RAND() LIMIT 8;";
+        $categories = $connection->query($unique_category_query);
+            if($categories->num_rows > 0) {
+                while($category = $categories->fetch_assoc()) { 
+                    $test_query = "SELECT * FROM Test WHERE Category = '" . $category['Category'] . "' ;";
+                    $test_result = $connection->query($test_query);
+                    if($test_result->num_rows > 0) {
+                        echo '<section class="categories">';
+                            echo '<div class="category-title">';
+                                echo '<h1>' . $category['Category'] . '</h1>';
+                                echo '<a href="index.php?page=quiz&category=' . urlencode($category['Category']) . '">View all</a>';
+                            echo '</div>'; 
+                            echo '<div class="category-display">';
+                        while ($test = $test_result->fetch_assoc()) { 
+                            echo '<a class="category" href="index.php?page=quiz_detail&quiz_id=' . $test['Test_ID'] . '">';
+                                echo '<div class="quiz-information">';
+                                        echo '<h3>' . $test['Test_name'] . '</h3>';
+                                        echo '<p>Time allowed:</p>';
+                                        echo '<p class="total-attempts">' . $test['Time_allowed'] . '</p>';
+                                echo '</div>';
+                            echo '</a>';
+                        }
+                            echo '</div>';
+                        echo '</section>';
+                    }
+                }
+            }
+    ?>
+    
 
     <?php
         require_once "./Components/footer.php";
