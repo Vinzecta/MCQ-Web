@@ -97,6 +97,8 @@
                             echo '</div>';
                         echo '</a>';
                     }
+                } else {
+                    echo '<p>Nothing to display!</p>';
                 }
             ?>
 

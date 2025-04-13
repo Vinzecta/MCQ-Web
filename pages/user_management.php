@@ -99,6 +99,8 @@
                         echo '</form>';
                     echo '</div>';
                 }
+            } else {
+                echo '<p style="text-align: center">Nothing to display!</p>';
             }
         ?>
     </section>

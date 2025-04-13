@@ -153,6 +153,8 @@
                     echo '</div>';
                 echo '</div>';
             }
+        } else {
+            echo '<p style="text-align: center">Nothing to display!</p>';
         }
         ?>
         </div>
@@ -171,6 +173,11 @@
     </section>
 
     <!-- <script type="module" src="../js/Page/question_management.js"></script> -->
+
+    <?php
+        require_once ("./Components/add_section.php");
+    ?>
+    
     <?php
         include "./Components/footer.php";
     ?>

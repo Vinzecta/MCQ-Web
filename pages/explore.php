@@ -26,7 +26,7 @@
     <!-- Search bar -->
     <section id="search-bar">
         <input id="search" type="text" placeholder="Search">
-        <img src="../images/explore/search.png" alt="Search icon">
+        <!-- <img src="../images/explore/search.png" alt="Search icon"> -->
     </section>
 
     <!-- <section id="popular">
@@ -160,7 +160,6 @@
     <section class="categories">
         <div class="category-title">
             <h1>Categories</h1>
-            <a href="index.php?page=category">View all</a>
         </div>  
         
         <div class="category-display">
@@ -173,6 +172,8 @@
                         echo '<p>' . $category['Category'] . '</p>';
                     echo '</a>';
                 }
+            } else {
+                echo '<p>Nothing to display!</p>';
             }
             ?>
         </div>

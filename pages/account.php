@@ -38,12 +38,12 @@
                 </div>
                 <a href="index.php?page=account&account_display=profile">My Profile</a>
             </div>
-            <div class="list-container" id="purchase-history">
+            <!-- <div class="list-container" id="purchase-history">
                 <div class="profile-pic">
                     <img src="../images/account/user.png">
                 </div>
                 <a href="index.php?page=account&account_display=history">Purchase History</a>
-            </div>
+            </div> -->
             <div class="list-container" id="reset-password">
                 <div class="profile-pic">
                     <img src="../images/account/user.png">
@@ -65,7 +65,7 @@
                         <?php 
                         // Display error
                             if (isset($_SESSION['error_message'])) {
-                                echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                                echo "<div class='alert' role='alert'>" . $_SESSION['error_message'] . "</div>";
                                 unset($_SESSION['error_message']); // Clear the message after displaying it
                             }
                             if (isset($_SESSION['success_message'])) {
@@ -103,7 +103,7 @@
                     </form>
                 </div>
                 <script src="../js/Page/profile_validation.js"></script>
-            <?php elseif ($display == 'history'): ?>
+            <!-- <//?php elseif ($display == 'history'): ?>
                 <div class="right-content" id="right-history">
                     <table>
                         <tr>
@@ -114,7 +114,7 @@
                             <th>Time End</th>
                         </tr>
                     </table>
-                </div>
+                </div> -->
             <?php elseif ($display == 'reset_password'): ?>
                 <div class="right-content" id="right-reset">
                     <div id="right-reset-title">
@@ -123,10 +123,23 @@
                     <form id="reset-pass" method="post" action="../logical/reset_pass.php">
                         <label>New password</label>
                         <input id="profile-password" type="password" class="password" name="password" placeholder="Enter new password">
+                        
                         <div class="alert alert-profile" style="display: none">
                             <p>This field is required!</p>
                         </div>
-                        <label>Re-type password</label>
+                        <div class="alert alert-profile" style="display: none">
+                            <p>Password must be at 8 - 30 characters!</p>
+                        </div>
+
+                        <div class="alert alert-profile" style="display: none">
+                            <p>Password must have at least one special character (!@#$)</p>
+                        </div>
+
+                        <div class="alert alert-profile" style="display: none">
+                            <p>Password must have at least one uppercase character! (A-Z)</p>
+                        </div>
+
+                        <label>Confirm password</label>
                         <input id="profile-re-password" type="password" class="password" name="Re-type-password" placeholder="Re-type password">
                         <div class="alert alert-profile" style="display: none">
                             <p>This field is required!</p>
