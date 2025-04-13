@@ -18,7 +18,7 @@ VALUES
 INSERT INTO Users (Email, User_name, Password_hash, PFP_URL)
 VALUES
 ('admin1@example.com', 'AdminOne1', '$2y$10$f1M@.YHash3dPa$$w0rdAdmin1', '../images/account/admin.png'),
-('admin2@example.com', 'AdminTwo2', '$2y$10$f1M@.YHash3dPa$$w0rdAdmin1', '../images/account/admin.png'),
+('admin2@example.com', 'AdminTwo2', '$2y$10$f1M@.YHash3dPa$$w0rdAdmin2', '../images/account/admin.png'),
 
 
 

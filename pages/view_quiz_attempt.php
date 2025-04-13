@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <link rel="stylesheet" href="../styles/Page/view_quiz_attempt.css">
-<<<<<<< HEAD
     <title>Ligma - View Quiz Attempt</title>
-=======
-    <title>Ligma - View Quiz</title>
->>>>>>> 996da03389e14d47167115a418c4a0d02c085d4c
 </head>
 <body>
     <form id="question-area" enctype="multipart/form-data" method="POST" action="../logical/add_q_process.php">

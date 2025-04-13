@@ -69,7 +69,7 @@
                 if(isset($_SESSION['User_ID']) && $_SESSION['is_admin'] == FALSE) {
                     echo '<a href="index.php?page=take_test&quiz_id=' . $test['Test_ID'] . '">Start Quiz</a>';
                 }
-                echo '<a href="index.php?page=quiz_singthum&quiz_id=' . $test['Test_ID'] . '">View Quiz</a>';
+                echo '<a href="index.php?page=view_quiz&quiz_id=' . $test['Test_ID'] . '">View Quiz</a>';
             ?>
         </div>
     </section>
