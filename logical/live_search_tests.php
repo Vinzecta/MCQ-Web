@@ -51,7 +51,7 @@ if(isset($_GET["test_search"])) {
     $tests_result = $tests_stmt->get_result();
     if ($tests_result->num_rows > 0) {  
         while($test = $tests_result->fetch_assoc()) { 
-            echo '<a class="category" href="index.php?page=edit_test">';
+            echo '<a class="category" href="index.php?page=quiz_detail&quiz_id=' . $test['Test_ID'] . '">';
                 echo '<div class="quiz-information">';
                     echo '<h3>' . $test['Test_name'] . '</h3>';
                     echo '<div class="quiz-info">';
