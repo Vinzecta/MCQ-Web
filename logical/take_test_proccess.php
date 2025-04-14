@@ -45,14 +45,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['Test_ID'])) {
         $Is_answer = $tq['Is_answer'];
         $Content = $tq['Content'];
         $choice_number = $tq['Choice_Number'];
-        if($Is_answer && $_POST['choose'][$Question_ID] == $Content) {
-            $score+=1;
+        if(!isset($_POST['choose'][$Question_ID])) {
+            $check_attempt_query = "SELECT COUNT(*) AS attempt_count FROM Question_Attempt WHERE Attempt_ID = ? AND Question_ID = ?";
+            $check_attempt_stmt = $connection->prepare($check_attempt_query);
+            $check_attempt_stmt->bind_param('ii', $test_attempt_id, $Question_ID);
+            $check_attempt_stmt->execute();
+            $check_attempt_result = $check_attempt_stmt->get_result();
+            $attempt_data = $check_attempt_result->fetch_assoc();
+
+            if ($attempt_data['attempt_count'] == 0) {
+                $Question_Attempt_add = "INSERT INTO Question_Attempt (Attempt_ID, Question_ID, Choice_Number, Is_correct) VALUES (?,?,?,?)";
+                $Question_Attempt_stmt = $connection->prepare($Question_Attempt_add);
+                $false = 0;
+                $choice = 4;
+                $Question_Attempt_stmt->bind_param('iiii', $test_attempt_id, $Question_ID, $choice, $false);
+                $Question_Attempt_stmt->execute();
+            }
         }
-        if($_POST['choose'][$Question_ID] == $Content) { // add to database question attempt
-            $Question_Attempt_add = "INSERT INTO Question_Attempt (Attempt_ID, Question_ID, Choice_Number, Is_correct) VALUES (?,?,?,?)";
-            $Question_Attempt_stmt = $connection->prepare($Question_Attempt_add);
-            $Question_Attempt_stmt->bind_param('iiii', $test_attempt_id, $Question_ID, $choice_number, $Is_answer);
-            $Question_Attempt_stmt->execute();
+        else {
+            if($Is_answer && $_POST['choose'][$Question_ID] == $Content) {
+                $score+=1;
+            }
+            if($_POST['choose'][$Question_ID] == $Content) { // add to database question attempt
+                $Question_Attempt_add = "INSERT INTO Question_Attempt (Attempt_ID, Question_ID, Choice_Number, Is_correct) VALUES (?,?,?,?)";
+                $Question_Attempt_stmt = $connection->prepare($Question_Attempt_add);
+                $Question_Attempt_stmt->bind_param('iiii', $test_attempt_id, $Question_ID, $choice_number, $Is_answer);
+                $Question_Attempt_stmt->execute();
+            }
         }
     }
 
