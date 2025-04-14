@@ -179,6 +179,7 @@
         }
 
         // Start countdown from saved time or default to 2 minutes
+        localStorage.removeItem("remainingTime");
         startCountdown(<?php echo $time_limit;?>);
     </script>
 
