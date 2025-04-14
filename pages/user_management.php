@@ -9,7 +9,12 @@
 </head>
 <body>
     <?php
-        require_once "./pages/Components/header.php";
+        require_once "./Components/header.php";
+    ?>
+
+    <h1 id="users-management">Users Management</h1>
+
+    <?php
         require_once "./Components/search_student.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(!isset($_SESSION['User_ID']) || $_SESSION['is_admin'] != TRUE) {
@@ -76,8 +81,6 @@
         }
     ?>
 
-    <h1 id="users-management">Users Management</h1>
-
     <section id="users">
         <?php 
             if ($current_page_result->num_rows > 0) { 
@@ -94,7 +97,7 @@
                                 echo '<button class="disable-button" type="submit" value="' . $student['User_ID'] . '" name="banned">' . 'Ban' . '</buton>';
                             }
                             else {
-                                echo '<button class="disable-button" type="submit" value="' . $student['User_ID'] . '" name="active">' . 'Active' . '</buton>';
+                                echo '<button class="disable-button active-button" type="submit" value="' . $student['User_ID'] . '" name="active">' . 'Active' . '</buton>';
                             }
                         echo '</form>';
                     echo '</div>';

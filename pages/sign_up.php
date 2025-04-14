@@ -20,19 +20,19 @@ if(!isset($_SESSION))
             <input type="text" placeholder="Username" id="username" name="Username">
 
             <!-- Username Validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Username must not contain spaces!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Username must be between 8 - 30 characters</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Username must not contain spaces!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Username must be between 8 - 30 characters</p></div>
 
             <input type="text" placeholder="Email" id="email" name="Email">
 
             <!--- Email Validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Please enter a valid email address!</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Please enter a valid email address!</p></div>
             <?php 
             // Display error
                 if (isset($_SESSION['error_message'])) {
-                    echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                    echo "<div class='alert alert-danger' role='alert'><p>" . $_SESSION['error_message'] . "</p></div>";
                     unset($_SESSION['error_message']); // Clear the message after displaying it
                 }
             ?>
@@ -40,16 +40,16 @@ if(!isset($_SESSION))
             <input type="password" placeholder="Password" id="password" name="Password">
 
             <!--- Password Validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password must be between 8 - 30 characters!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 special character (!@#$)</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 uppercase character (A-Z)</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password must be between 8 - 30 characters!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password must have at least 1 special character (!@#$)</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password must have at least 1 uppercase character (A-Z)</p></div>
 
             <input type="password" placeholder="Confirm password" id="confirm" name="Confirm_password">
             
             <!-- Confirm password validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password does not match!</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password does not match!</p></div>
         </div>
         <div class="check_password">
             <input id="check" type="checkbox">
@@ -57,10 +57,10 @@ if(!isset($_SESSION))
         </div>
         <button type="submit" id="sign_in_button">Sign up</button></b> <!-- Leads to index.php?page=role to get role -->
         <p id="or">or</p>
-        <div class="social_image">
+        <!-- <div class="social_image">
             <img src="../images/sign in/google.png" alt="google" id="google_icon">
             <img src="../images/sign in/facebook.png" alt="facebook" id="facebook_icon">
-        </div>
+        </div> -->
         <p id="register">Have account? <a id="register_link" href="index.php?page=sign_in">Login Now</a></p>
     </form>
     <script type="module" src="../js/Page/sign_up.js"></script>

@@ -1,4 +1,6 @@
 @import url("add_question.css");
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
 
 .image-upload {
     width: 100%;

@@ -5,7 +5,7 @@
         session_start(); 
     } 
     $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
-    $display = isset($_GET['account_display']) && in_array($_GET['account_display'], array('profile', 'history', 'reset_password')) ? $_GET['account_display'] : 'profile';
+    $display = isset($_GET['account_display']) && in_array($_GET['account_display'], array('profile', 'reset_password')) ? $_GET['account_display'] : 'profile';
     if(!isset($_SESSION['User_ID'])) {
         header("Location: $base_url/pages/index.php?page=sign_in");
     }
@@ -103,7 +103,7 @@
                     </form>
                 </div>
                 <script src="../js/Page/profile_validation.js"></script>
-            <!-- <//?php elseif ($display == 'history'): ?>
+            <!--
                 <div class="right-content" id="right-history">
                     <table>
                         <tr>
@@ -127,8 +127,9 @@
                         <div class="alert alert-profile" style="display: none">
                             <p>This field is required!</p>
                         </div>
+
                         <div class="alert alert-profile" style="display: none">
-                            <p>Password must be at 8 - 30 characters!</p>
+                            <p>Password must be between 8 - 30 characters!</p>
                         </div>
 
                         <div class="alert alert-profile" style="display: none">
@@ -136,7 +137,7 @@
                         </div>
 
                         <div class="alert alert-profile" style="display: none">
-                            <p>Password must have at least one uppercase character! (A-Z)</p>
+                            <p>Password must have at least one uppercase character (A-Z)</p>
                         </div>
 
                         <label>Confirm password</label>
@@ -153,7 +154,7 @@
                         </div>
                         <?php 
                         if (isset($_SESSION['error_message'])) {
-                            echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
+                            echo "<div class='alert alert-danger' role='alert'><p>" . $_SESSION['error_message'] . "</p></div>";
                             unset($_SESSION['error_message']); // Clear the message after displaying it
                         }
                         if (isset($_SESSION['success_message'])) {

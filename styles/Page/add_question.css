@@ -1,3 +1,6 @@
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
+
 body, html {
     font-family: "Outfit", sans-serif;
     width: 100%;

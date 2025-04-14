@@ -1,4 +1,6 @@
 @import url("take_test.css");
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
 
 .correct {
     background-color: #9fc5b5;

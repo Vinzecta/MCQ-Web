@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (password.value.length === 0) {
             alert[0].style.display = "block";
         } else {
-            if (alert[2].style.display == "block") {
+            if (alert[5].style.display == "block") {
                 if (password.value == repassword.value) {
-                    alert[2].style.display = "none";
+                    alert[5].style.display = "none";
                 }
             }
             alert[0].style.display = "none";

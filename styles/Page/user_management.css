@@ -1,4 +1,7 @@
 @import url("../Component/pagination.css");
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
+
 body, html {
     font-family: "Outfit", sans-serif;
     margin: 0;
@@ -11,7 +14,7 @@ body, html {
 #users {
     width: 80%;
     margin-left: 10%;
-    padding: 20px;
+    padding: 20px 10px 20px 10px;
     font-size: 20px;
     display: flex;
     gap: 20px;
@@ -20,9 +23,11 @@ body, html {
     border-radius: 15px;
     background-color: #f2f2f2;
     border-radius: 15px;
+    margin-top: 5%;
 }
 
 .user {
+    width: 20%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -77,6 +82,7 @@ body, html {
     background-color: red;
     border-radius: 15px;
     text-align: center;
+    border: none;
 }
 
 .disable-button:hover {

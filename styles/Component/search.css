@@ -3,7 +3,7 @@
     height: auto;
     margin: 0 auto;
     margin-top: 5%;
-    margin-bottom: 20px;
+    margin-bottom: 5%;
 }
 
 #search-bar input {
@@ -13,6 +13,8 @@
     font-family: "Outfit", sans-serif;
     padding-left: 20px;
     z-index: 0;
+    font-family: "Outfit", sans-serif;
+    padding: 0 15px 0 15px;
 }
 
 #search-bar img {
@@ -35,15 +37,16 @@
     gap: 20px;
 }
 
-select {
+.sort-area select {
     font-family: "Outfit", sans-serif;
-    padding: 10px 20px 10px 20px;
     border-radius: 15px;
+    padding: 0 15px 0 15px;
 }
 
 #confirm_sort {
-    padding: 5px 20px 5px 20px;
     font-family: "Outfit", sans-serif;
+    width: fit-content;
+    padding: 0 15px 0 15px;
     border-radius: 15px;
     font-size: 15px;
     color: white;
