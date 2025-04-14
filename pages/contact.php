@@ -15,7 +15,7 @@ if(!isset($_SESSION))
 </head>
 <body>
     <?php
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(isset($_SESSION['Student_status']) && $_SESSION['Student_status'] == 'banned') {
             header("Location: $base_url/pages/index.php?page=you_have_been_banned");
@@ -74,7 +74,7 @@ if(!isset($_SESSION))
     </section>
 
     <?php
-        require_once "./Components/footer.php";
+        require_once "./pages/Components/footer.php";
     ?>
 </body>
 </html>

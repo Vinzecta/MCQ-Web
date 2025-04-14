@@ -27,7 +27,7 @@
 </head>
 <body>
     <?php 
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
     ?>
 
     <section id="profile">
@@ -170,7 +170,7 @@
     </section>
 
     <?php
-        require_once "./Components/footer.php";
+        require_once "./pages/Components/footer.php";
     ?>
 </body>
 </html>

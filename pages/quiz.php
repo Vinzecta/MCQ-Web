@@ -15,7 +15,7 @@
         } 
         require_once "./Components/header.php";
         $category = isset($_GET["category"]) ? $_GET["category"] : ''; 
-        require_once "./Components/search_quiz.php";
+        require_once "./pages/Components/search_quiz.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(isset($_SESSION['Student_status']) && $_SESSION['Student_status'] == 'banned') {
             header("Location: $base_url/pages/index.php?page=you_have_been_banned");
@@ -111,7 +111,7 @@
     </section>
 
     <?php
-        require_once "./Components/footer.php";
+        require_once "./pages/Components/footer.php";
     ?>
     <script src="../js/Page/category.js"></script>
     <script src="../js/Page/explore.js"></script>

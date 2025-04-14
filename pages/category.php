@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
         require_once "./Components/search.php";
     ?>
 
@@ -191,7 +191,7 @@
     </section>
 
     <?php
-        require_once "./Components/footer.php";
+        require_once "./pages/Components/footer.php";
     ?>
 
     <script src="../js/Page/explore.js"></script>

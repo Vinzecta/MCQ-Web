@@ -56,7 +56,7 @@ if(!isset($_SESSION))
     </form>
 
     <?php
-        require_once "./Components/footer.php"
+        require_once "./pages/Components/footer.php"
     ?>
     <script type="module" src="../js/Page/sign_in.js"></script>
 </body>

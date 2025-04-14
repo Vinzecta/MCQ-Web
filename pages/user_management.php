@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
         require_once "./Components/search_student.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(!isset($_SESSION['User_ID']) || $_SESSION['is_admin'] != TRUE) {
@@ -113,7 +113,7 @@
     <script src="../js/Page/user_management.js"></script>
 
     <?php
-        include "./Components/footer.php";
+        include "./pages/Components/footer.php";
     ?>
 </body>
 </html>

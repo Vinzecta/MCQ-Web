@@ -27,7 +27,7 @@
 </head>
 <body>
     <?php
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
         require_once "../logical/database_connect.php";
         require_once "../logical/function.php";
     ?>
@@ -182,7 +182,7 @@ else {
 
 
     <?php
-        require_once "./Components/footer.php";
+        require_once "./pages/Components/footer.php";
     ?>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script> <!-- For search category-->
 </body>

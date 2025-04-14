@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(!isset($_SESSION['User_ID']) || $_SESSION['is_admin'] != TRUE) {
             header("Location: $base_url/pages/index.php?page=sign_in");
@@ -179,7 +179,7 @@
     ?>
     
     <?php
-        include "./Components/footer.php";
+        include "./pages/Components/footer.php";
     ?>
 </body>
 </html>

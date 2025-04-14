@@ -184,7 +184,7 @@
 
 
    <?php 
-        include "./Components/footer.php"
+        include "./pages/Components/footer.php"
    ?>
 </body>
 </html>

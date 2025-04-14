@@ -10,7 +10,7 @@
 <body>
     <?php 
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
-        require_once "./Components/header.php";
+        require_once "./pages/Components/header.php";
         require_once "../logical/database_connect.php";
         require_once "../logical/function.php";
         $question_id = sanitize_input($_GET['question_id']);
@@ -126,7 +126,7 @@
    <script src="../js/Page/add_question.js"></script>
 
     <?php
-        include "./Components/footer.php";
+        include "./pages/Components/footer.php";
     ?>
 </body>
 </html>
