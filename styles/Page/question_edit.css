@@ -1,7 +1,21 @@
 @import url("add_question.css");
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
 
 #question-edit {
     font-size: 50px;
     text-align: center;
     margin-top: 10%;
+}
+
+.alert {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.success {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
 }

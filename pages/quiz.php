@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <link rel="stylesheet" href="../styles/Page/quiz.css">
     <title>Ligma - Quiz</title>
 </head>
@@ -82,9 +83,9 @@
     <section class="categories">
         <div class="category-title">
             <h1>Quiz</h1>
-            <div id="display">
+            <!-- <div id="display">
                 <img src="../images/category/sort.png" alt="display">
-            </div>
+            </div> -->
         </div>  
         <div class="category-display">
             <?php 
@@ -94,9 +95,9 @@
                             echo '<div class="quiz-information">';
                                 echo '<h3>' . $test['Test_name'] . '</h3>';
                                 echo '<div class="quiz-info">';
-                                    echo '<p>Author: ' . $test['User_name'] . '</p>';
-                                    echo '<p>Category: ' . $test['Category'] . '</p>';
-                                    echo '<p>Time limits: ' . $test['Time_allowed'] . ' minutes</p>';
+                                    echo '<p>Author: <span>' . $test['User_name'] . '</span></p>';
+                                    echo '<p>Category: <span>' . $test['Category'] . '</span></p>';
+                                    echo '<p>Time limits: <span>' . $test['Time_allowed'] . ' minutes</span></p>';
                                 echo '</div>';
                             echo '</div>';
                         echo '</a>';
@@ -113,7 +114,7 @@
     <?php
         require_once "./Components/footer.php";
     ?>
-    <script src="../js/Page/category.js"></script>
-    <script src="../js/Page/explore.js"></script>
+    <!-- <script src="../js/Page/category.js"></script>
+    <script src="../js/Page/explore.js"></script> -->
 </body>
 </html>

@@ -4,30 +4,56 @@ document.addEventListener("DOMContentLoaded", function() {
     const repassword = document.getElementById("profile-re-password");
     const pass_button = document.getElementById("change-pass-button");
     const show_pass = document.getElementById("profile-show");
+    const special_character_regex = /[^a-zA-Z0-9\s]/;
+    const uppercase_regex = /[A-Z]/;
 
     password.addEventListener("input", function() {
         if (password.value.length === 0) {
             alert[0].style.display = "block";
         } else {
-            if (alert[2].style.display == "block") {
+            if (alert[5].style.display == "block") {
                 if (password.value == repassword.value) {
-                    alert[2].style.display = "none";
+                    alert[5].style.display = "none";
                 }
             }
             alert[0].style.display = "none";
+        }
+
+        if (password.value.length < 8 || password.value.length > 30) {
+            alert[1].style.display = "block";
+        } else {
+            alert[1].style.display = "none";
+        }
+
+        if (!special_character_regex.test(password.value)) {
+            alert[2].style.display = "block";
+        } else {
+            alert[2].style.display = "none";
+        }
+
+        if (!uppercase_regex.test(password.value)) {
+            alert[3].style.display = "block";
+        } else {
+            alert[3].style.display = "none";
+        }
+
+        if (alert[5].style.display == "block") {
+            if (confirm.value == password.value) {
+                alert[5].style.display = "none";
+            }
         }
     });
 
     repassword.addEventListener("input", function() {
         if (repassword.value.length === 0) {
-            alert[1].style.display = "block";
+            alert[4].style.display = "block";
         } else {
-            alert[1].style.display = "none";
+            alert[4].style.display = "none";
         }
         if (repassword.value != password.value) {
-            alert[2].style.display = "block";
+            alert[5].style.display = "block";
         } else {
-            alert[2].style.display = "none";
+            alert[5].style.display = "none";
         }
     });
 

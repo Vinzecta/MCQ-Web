@@ -3,6 +3,7 @@
     height: auto;
     margin: 0 auto;
     margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #search-bar input {
@@ -10,6 +11,8 @@
     height: 30px;
     border-radius: 15px;
     z-index: 0;
+    font-family: "Outfit", sans-serif;
+    padding: 0 15px 0 15px;
 }
 
 #search-bar img {
@@ -30,4 +33,26 @@
 .sort-area {
     display: flex;
     gap: 20px;
+}
+
+.sort-area select {
+    font-family: "Outfit", sans-serif;
+    border-radius: 15px;
+    padding: 0 15px 0 15px;
+}
+
+#confirm_sort {
+    font-family: "Outfit", sans-serif;
+    width: fit-content;
+    padding: 0 15px 0 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(38, 38, 243);
+    border: none;
+}
+
+#confirm_sort:hover {
+    background-color: rgb(78, 78, 243);
+    font-weight: bold;
 }

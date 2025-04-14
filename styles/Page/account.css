@@ -183,3 +183,8 @@ select {
 #profile input {
     font-family: "Outfit", serif;
 }
+
+.show-password {
+    display: flex;
+    gap: 20px;
+}

@@ -86,16 +86,16 @@
             <?php 
                 if ($current_page_result->num_rows > 0) { 
                     while($test = $current_page_result->fetch_assoc()) { 
-                        echo '<a class="category" href="index.php?page=edit_test">';
+                        echo '<div class="category">';
                             echo '<div class="quiz-information">';
                                 echo '<h3>' . $test['Test_name'] . '</h3>';
                                 echo '<div class="quiz-info">';
-                                    echo '<p>Author: ' . $test['User_name'] . '</p>';
-                                    echo '<p>Category: ' . $test['Category'] . '</p>';
-                                    echo '<p>Time limits: ' . $test['Time_allowed'] . ' minutes</p>';
+                                    echo '<p>Author: <span>' . $test['User_name'] . '</span></p>';
+                                    echo '<p>Category: <span>' . $test['Category'] . '</span></p>';
+                                    echo '<p>Time limits: <span>' . $test['Time_allowed'] . ' minutes</span></p>';
                                 echo '</div>';
                             echo '</div>';
-                        echo '</a>';
+                        echo '</div>';
                     }
                 }
             ?>
@@ -113,8 +113,8 @@
         require_once ("./Components/add_section.php");
     ?>
 
-    <script src="../js/Page/category.js"></script>
-    <script src="../js/Page/explore.js"></script>
+    <!-- <script src="../js/Page/category.js"></script>
+    <script src="../js/Page/explore.js"></script> -->
 
     <?php
         require_once ("./Components/footer.php");

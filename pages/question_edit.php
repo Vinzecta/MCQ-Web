@@ -49,6 +49,18 @@
 
     <h1 id="question-edit">Question Information</h1>
 
+    <?php
+        if(isset($_SESSION['error_message'])) {
+            echo "<div class='alert alert-danger' role='alert'><p>" . $_SESSION['error_message'] . "</p></div>";
+            unset($_SESSION['error_message']);
+        }
+
+        if (isset($_SESSION['success_message'])) {
+            echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
+            unset($_SESSION['success_message']); // Clear the message after displaying it
+        }
+    ?>
+
     <form id="question-area" enctype="multipart/form-data" method="POST" action="../logical/edit_q_process.php">
         <!-- Category selection -->
         <div class="choose-category">

@@ -24,10 +24,10 @@
 
      
     // Display error
-        if (isset($_SESSION['error_message'])) {
-            echo "<div class='alert alert-danger' role='alert'>" . $_SESSION['error_message'] . "</div>";
-            unset($_SESSION['error_message']); // Clear the message after displaying it
-        }
+        // if (isset($_SESSION['error_message'])) {
+        //     echo "<div class='alert alert-danger' role='alert'><p>" . $_SESSION['error_message'] . "</p></div>";
+        //     unset($_SESSION['error_message']); // Clear the message after displaying it
+        // }
         if (isset($_SESSION['success_message'])) {
             echo "<div class='success'><p>" . $_SESSION['success_message'] . "</p></div>";
             unset($_SESSION['success_message']); // Clear the message after displaying it
@@ -118,7 +118,7 @@
         }
     ?>
 
-    <section id="question-selection">
+    <section id="question-selection" style="margin-top: 5%">
         <?php 
         if ($current_page_result->num_rows > 0) { 
             while($question = $current_page_result->fetch_assoc()) { 
@@ -148,7 +148,7 @@
                     echo '<div class="modify-section">';
                         echo '<a href="index.php?page=question_edit&question_id=' . $question['Question_ID'] . '">Edit</a>';
                         echo '<form method="POST" action="../logical/delete_questions.php" enctype="multipart/form-data">';
-                            echo '<button id="delete-question" type="submit" value="' . $question['Question_ID'] . '" name="DELETE_ID">DELETE</button>';
+                            echo '<button class="delete-question" type="submit" value="' . $question['Question_ID'] . '" name="DELETE_ID">Delete</button>';
                         echo '</form>';
                     echo '</div>';
                 echo '</div>';
@@ -169,6 +169,10 @@
         </div> -->
         <?php pagination($total_pages, $num_adjacents_page); ?>
     </section>
+
+    <?php
+        include "./Components/add_section.php";
+    ?>
 
     <!-- <script type="module" src="../js/Page/question_management.js"></script> -->
     <?php

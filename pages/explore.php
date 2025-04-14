@@ -24,10 +24,10 @@
     ?>
 
     <!-- Search bar -->
-    <section id="search-bar">
+    <!-- <section id="search-bar">
         <input id="search" type="text" placeholder="Search">
         <img src="../images/explore/search.png" alt="Search icon">
-    </section>
+    </section> -->
 
     <!-- <section id="popular">
         <div class="category-title" id="popular-quiz">
@@ -160,7 +160,6 @@
     <section class="categories">
         <div class="category-title">
             <h1>Categories</h1>
-            <a href="index.php?page=category">View all</a>
         </div>  
         
         <div class="category-display">
@@ -169,7 +168,7 @@
             $categories = $connection->query($unique_category_query);
             if($categories->num_rows > 0) {
                 while($category = $categories->fetch_assoc()) { 
-                    echo '<a class="category">';
+                    echo '<a class="category" href="index.php?page=quiz&category=' . $category['Category'] . '">';
                         echo '<p>' . $category['Category'] . '</p>';
                     echo '</a>';
                 }
@@ -213,6 +212,6 @@
         require_once "./Components/footer.php";
     ?>
 
-    <script src="../js/Page/explore.js"></script>
+    <!-- <script src="../js/Page/explore.js"></script> -->
 </body>
 </html>
