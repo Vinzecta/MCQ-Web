@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2025 at 07:20 PM
+-- Generation Time: Apr 14, 2025 at 02:14 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -177,7 +177,11 @@ INSERT INTO `choice` (`Question_ID`, `Choice_Number`, `Content`, `Is_answer`) VA
 (96, 1, '18', 1),
 (96, 2, '3323', 0),
 (96, 3, '2323', 0),
-(96, 4, '2323', 0);
+(96, 4, '2323', 0),
+(97, 1, '6', 1),
+(97, 2, '4', 0),
+(97, 3, '34', 0),
+(97, 4, '453636', 0);
 
 -- --------------------------------------------------------
 
@@ -202,7 +206,8 @@ INSERT INTO `contact` (`Contact_ID`, `Email`, `Title`, `Messages`, `Contact_Date
 (2, 'user1@example.com', 'Hello', 'Thiz website iz amazing', '2025-04-10 20:55:20'),
 (3, 'holaamigos@hcmut.edu.vn', 'Hiiiii', 'I LABVE UUUUUUUUUU', '2025-04-10 20:56:07'),
 (4, 'user6@example.com', 'CONCAC', 'NO CHILL', '2025-04-11 16:07:32'),
-(5, 'admin2@example.com', 'concac', 'du ma mayy', '2025-04-11 22:03:14');
+(5, 'admin2@example.com', 'concac', 'du ma mayy', '2025-04-11 22:03:14'),
+(6, 'admin1@example.com', 'hê hê', 'con cac', '2025-04-14 18:32:48');
 
 -- --------------------------------------------------------
 
@@ -252,7 +257,8 @@ INSERT INTO `question` (`Question_ID`, `Question_name`, `Category`, `Question_UR
 (93, '3+3', 'Math', '../images/question/default_question.png', 1),
 (94, '4+4', 'Math', '../images/question/default_question.png', 1),
 (95, '5+5', 'Math', '../images/question/default_question.png', 1),
-(96, '9+9', 'Math', '../images/question/default_question.png', 2);
+(96, '9+9', 'Math', '../images/question/default_question.png', 2),
+(97, '3 x 2', 'Math', '../images/question/default_question.png', 1);
 
 -- --------------------------------------------------------
 
@@ -315,7 +321,69 @@ INSERT INTO `question_attempt` (`Question_Attempt_ID`, `Attempt_ID`, `Question_I
 (40, 12, 92, 4, 0),
 (41, 12, 93, 3, 1),
 (42, 12, 94, 4, 1),
-(43, 12, 95, 4, 1);
+(43, 12, 95, 4, 1),
+(44, 13, 83, 3, 0),
+(45, 13, 84, 4, 0),
+(46, 13, 91, 4, 0),
+(47, 13, 92, 3, 0),
+(48, 13, 93, 4, 0),
+(49, 13, 94, 3, 0),
+(50, 13, 95, 1, 0),
+(51, 14, 83, 2, 0),
+(52, 14, 84, 1, 1),
+(53, 14, 91, 1, 1),
+(54, 14, 92, 2, 1),
+(55, 14, 93, 4, 0),
+(56, 14, 94, 1, 0),
+(57, 14, 95, 2, 0),
+(58, 16, 83, 1, 1),
+(59, 16, 84, 1, 1),
+(60, 16, 91, 1, 1),
+(61, 16, 92, 2, 1),
+(62, 16, 93, 1, 0),
+(63, 16, 94, 1, 0),
+(64, 16, 95, 1, 0),
+(65, 17, 83, 2, 0),
+(66, 17, 84, 2, 0),
+(67, 17, 91, 3, 0),
+(68, 17, 92, 1, 0),
+(69, 17, 93, 2, 0),
+(70, 17, 94, 4, 1),
+(71, 17, 95, 1, 0),
+(72, 18, 83, 1, 1),
+(73, 18, 84, 1, 1),
+(74, 18, 91, 2, 0),
+(75, 18, 92, 1, 0),
+(76, 18, 93, 1, 0),
+(77, 18, 94, 3, 0),
+(78, 18, 95, 1, 0),
+(80, 22, 83, 4, 0),
+(81, 22, 84, 4, 0),
+(82, 22, 91, 4, 0),
+(83, 22, 92, 4, 0),
+(84, 22, 93, 4, 0),
+(85, 22, 94, 4, 0),
+(86, 22, 95, 4, 0),
+(87, 23, 83, 4, 0),
+(88, 23, 84, 4, 0),
+(89, 23, 91, 4, 0),
+(90, 23, 92, 4, 0),
+(91, 23, 93, 4, 0),
+(92, 23, 94, 4, 0),
+(93, 23, 95, 4, 0),
+(94, 24, 83, 4, 0),
+(95, 24, 84, 4, 0),
+(96, 24, 91, 4, 0),
+(97, 24, 92, 4, 0),
+(98, 24, 93, 4, 0),
+(99, 24, 94, 4, 0),
+(100, 24, 95, 4, 0),
+(101, 25, 69, 3, 0),
+(102, 25, 71, 1, 0),
+(103, 25, 77, 4, 1),
+(104, 25, 78, 3, 1),
+(105, 25, 80, 2, 0),
+(106, 25, 82, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -336,7 +404,7 @@ CREATE TABLE `student` (
 INSERT INTO `student` (`Student_ID`, `User_ID`, `Student_status`) VALUES
 (1, 1, 'active'),
 (2, 2, 'active'),
-(3, 3, 'active'),
+(3, 3, 'banned'),
 (4, 4, 'active'),
 (5, 5, 'active'),
 (6, 6, 'active'),
@@ -363,15 +431,14 @@ CREATE TABLE `test` (
 --
 
 INSERT INTO `test` (`Test_ID`, `Test_name`, `Time_allowed`, `Category`, `Admin_ID`, `descriptions`) VALUES
-(1, 'Singthum', 30, 'All', 1, 'dfawfwarewf'),
-(2, 'Algorithms test', 10, 'Algorithms', 1, ''),
-(3, 'Random', 10, 'All', 1, ''),
 (4, 'Random test', 10, 'All', 1, ''),
 (5, 'Computer science', 5, 'All', 1, ''),
 (6, 'Database 1', 10, 'Database', 1, 'Database test'),
 (7, 'Random knowledge', 15, 'All', 1, ''),
 (8, 'Random knowledge 2', 5, 'All', 1, ''),
-(9, 'Math easy', 5, 'All', 1, '');
+(9, 'Math easy', 5, 'All', 1, ''),
+(10, 'Math easy 2', 5, 'Math', 2, ''),
+(11, 'Database 2', 3, 'Database', 2, '');
 
 -- --------------------------------------------------------
 
@@ -426,7 +493,18 @@ INSERT INTO `testquestions` (`Test_ID`, `Question_ID`) VALUES
 (9, 92),
 (9, 93),
 (9, 94),
-(9, 95);
+(9, 95),
+(10, 81),
+(10, 84),
+(10, 95),
+(10, 96),
+(10, 97),
+(11, 69),
+(11, 71),
+(11, 77),
+(11, 78),
+(11, 80),
+(11, 82);
 
 -- --------------------------------------------------------
 
@@ -453,7 +531,20 @@ INSERT INTO `test_attempt` (`Attempt_ID`, `Test_ID`, `Student_ID`, `Score`, `Att
 (9, 9, 2, 5, '2025-04-13 21:32:44'),
 (10, 9, 2, 5, '2025-04-13 21:33:44'),
 (11, 9, 2, 7, '2025-04-13 21:35:25'),
-(12, 9, 2, 5, '2025-04-14 00:14:36');
+(12, 9, 2, 5, '2025-04-14 00:14:36'),
+(13, 9, 2, 0, '2025-04-14 07:05:32'),
+(14, 9, 3, 3, '2025-04-14 07:14:24'),
+(15, 9, 3, 0, '2025-04-14 07:14:33'),
+(16, 9, 3, 4, '2025-04-14 07:15:00'),
+(17, 9, 3, 1, '2025-04-14 07:24:11'),
+(18, 9, 3, 2, '2025-04-14 07:25:04'),
+(19, 9, 3, 0, '2025-04-14 08:11:14'),
+(20, 9, 3, 0, '2025-04-14 08:11:21'),
+(21, 9, 3, 0, '2025-04-14 08:12:15'),
+(22, 9, 3, 0, '2025-04-14 08:14:19'),
+(23, 9, 4, 0, '2025-04-14 08:15:51'),
+(24, 9, 2, 0, '2025-04-14 18:34:11'),
+(25, 11, 2, 3, '2025-04-14 18:41:07');
 
 -- --------------------------------------------------------
 
@@ -475,7 +566,7 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`User_ID`, `Email`, `User_name`, `Password_hash`, `PFP_URL`) VALUES
 (1, 'viet.nguyenlodaunv1@hcmut.edu.vn', 'concacnhor', '6ebfb5228bf3d703596f78f80efdea35', '../images/account/user.png'),
-(2, 'user1@example.com', 'UserOne1', '9152104419fedb3149fe390b291c0f81', '../images/account/User_2PFP.jpg'),
+(2, 'user1@example.com', 'UserOne1', '9152104419fedb3149fe390b291c0f81', '../images/account/User_2PFP.png'),
 (3, 'user2@example.com', 'UserTwo2', 'df92c3c0c9eda77a955650e8b586c932', '../images/account/user.png'),
 (4, 'user3@example.com', 'UserThree3', '1037993a38576af0fda819227ea4913e', '../images/account/user.png'),
 (5, 'user4@example.com', 'UserFour4', 'fad37100531a5e632a789d6a88529dbe', '../images/account/user.png'),
@@ -572,19 +663,19 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `Contact_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Contact_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `question`
 --
 ALTER TABLE `question`
-  MODIFY `Question_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `Question_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=98;
 
 --
 -- AUTO_INCREMENT for table `question_attempt`
 --
 ALTER TABLE `question_attempt`
-  MODIFY `Question_Attempt_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `Question_Attempt_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT for table `student`
@@ -596,13 +687,13 @@ ALTER TABLE `student`
 -- AUTO_INCREMENT for table `test`
 --
 ALTER TABLE `test`
-  MODIFY `Test_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `Test_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `test_attempt`
 --
 ALTER TABLE `test_attempt`
-  MODIFY `Attempt_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `Attempt_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `users`
