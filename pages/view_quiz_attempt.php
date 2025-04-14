@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php 
-    require_once "./pages/Components/header.php";
+    require_once "./Components/header.php";
     require_once "../logical/database_connect.php";
     require_once "../logical/function.php";
     $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
@@ -145,7 +145,7 @@
     </div>
 
    <?php 
-        include "./pages/Components/footer.php"
+        include "./Components/footer.php"
    ?>
 </body>
 </html>

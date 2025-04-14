@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        require_once "./pages/Components/header.php";
+        require_once "./Components/header.php";
         $base_url = 'http://' . $_SERVER['HTTP_HOST'] . rtrim(dirname(dirname($_SERVER['PHP_SELF'])), '/\\');
         if(!isset($_SESSION['User_ID']) || $_SESSION['is_admin'] != TRUE) {
             header("Location: $base_url/pages/index.php?page=sign_in");
@@ -173,7 +173,7 @@
     </section>
 
     <?php
-        include "./Components/add_section.php";
+        require_once "./Components/add_section.php";
     ?>
 
     <!-- <script type="module" src="../js/Page/question_management.js"></script> -->
@@ -183,7 +183,7 @@
     ?>
     
     <?php
-        include "./pages/Components/footer.php";
+        include "./Components/footer.php";
     ?>
 </body>
 </html>

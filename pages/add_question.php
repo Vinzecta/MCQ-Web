@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php
-        require_once "./pages/Components/header.php";
+        require_once "./Components/header.php";
         require_once "../logical/database_connect.php";
         require_once "../logical/function.php";
     ?>
@@ -108,7 +108,7 @@
    <script src="../js/Page/add_question.js"></script>
 
     <?php
-        require_once "./pages/Components/footer.php";
+        require_once "./Components/footer.php";
     ?>
 </body>
 </html>

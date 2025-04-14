@@ -116,7 +116,7 @@
     <script src="../js/Page/user_management.js"></script>
 
     <?php
-        include "./pages/Components/footer.php";
+        include "./Components/footer.php";
     ?>
 </body>
 </html>
