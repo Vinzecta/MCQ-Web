@@ -6,5 +6,5 @@
     else if (isset($_POST['page'])) {
         $page = $_POST['page'];
     }
-    require_once "$page.php";
+    require_once "./$page.php";
 ?>

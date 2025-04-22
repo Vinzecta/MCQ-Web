@@ -48,6 +48,7 @@ body, html {
     background-color: rgb(38, 38, 243);
     border: none;
     text-align: center;
+    text-decoration: none;
 }
 
 #quiz-button a:hover {

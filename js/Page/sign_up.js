@@ -95,8 +95,10 @@ document.addEventListener("DOMContentLoaded", function() {
     show_pass.addEventListener("click", function() {
         if (show_pass.checked) {
             password.type = "text";
+            confirm.type = "text";
         } else {
             password.type = "password";
+            confirm.type = "password";
         }
     });
 

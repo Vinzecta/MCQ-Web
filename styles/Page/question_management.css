@@ -1,5 +1,7 @@
 @import url("add_test.css");
 @import url("../Component/pop_up.css");
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
 
 #question-management {
     font-size: 50px;
@@ -25,15 +27,26 @@
     font-weight: bold;
 }
 
-button .modify-section form #delete-question{
-    font-size: 15px;
-    width: fit-content;
-    height: fit-content;
-    background-color: red;
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 15px;
+/* button .modify-section form #delete-question{
+    font-size: 15px !important;
+    width: fit-content !important;
+    height: fit-content !important;
+    background-color: red !important;
+    color: white !important;
+    padding: 15px 20px !important;
+    border: none !important;
+    border-radius: 15px !important;
+} */
+
+.delete-question {
+    font-size: 15px !important;
+    width: fit-content !important;
+    height: fit-content !important;
+    background-color: red !important;
+    color: white !important;
+    padding: 15px 20px !important;
+    border: none !important;
+    border-radius: 15px !important;
 }
 
 .modify-section {
@@ -45,4 +58,16 @@ button .modify-section form #delete-question{
 #delete-question:hover {
     font-weight: bold;
     background-color: rgb(240, 82, 82);
+}
+
+.alert {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.success {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
 }

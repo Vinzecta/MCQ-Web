@@ -79,7 +79,7 @@ if(isset($_GET["question_search"])) {
                 echo '<div class="modify-section">';
                         echo '<a href="index.php?page=question_edit&question_id=' . $question['Question_ID'] . '">Edit</a>';
                         echo '<form method="POST" action="../logical/delete_questions.php" enctype="multipart/form-data">';
-                            echo '<button id="delete-question" type="submit" value="' . $question['Question_ID'] . '" name="DELETE_ID">DELETE</button>';
+                            echo '<button class="delete-question" type="submit" value="' . $question['Question_ID'] . '" name="DELETE_ID">Delete</button>';
                         echo '</form>';
                     echo '</div>';
             echo '</div>';

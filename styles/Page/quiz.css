@@ -20,3 +20,29 @@
 .list-info {
     padding: 0;
 }
+
+.category {
+    width: 30%;
+}
+
+.quiz-information {
+    margin: auto;
+}
+
+.quiz-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quiz-info p {
+    font-weight: bold;
+    margin-left: 0;
+}
+
+.quiz-info span {
+    font-weight: normal;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+}

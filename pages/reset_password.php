@@ -10,7 +10,7 @@
  </head>
  <body>
     <form class="sign_in">
-        <p id="introduction">Reset Password</p>
+        <p id="introduction">Forgot Password</p>
         <!-- Error message for backend (if neccessary)
         <div class="alert alert-danger" role="alert">New password cannot be the same as old password!</div> -->
 
@@ -18,22 +18,22 @@
             <input id="email" placeholder="Enter email" type="text">
 
             <!--- Email Validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Please enter a valid email address!</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Please enter a valid email address!</p></div>
 
             <input id="password" placeholder="Enter password" type="password">
 
             <!--- Password Validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password must be between 8 - 30 characters!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 special character (!@#$)</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password must have at least 1 uppercase character (A-Z)</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password must be between 8 - 30 characters!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password must have at least 1 special character (!@#$)</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password must have at least 1 uppercase character (A-Z)</p></div>
 
             <input id="confirm" placeholder="Confirm password" type="password">
 
             <!-- Confirm password validation -->
-            <div class="alert alert-danger" role="alert" style="display: none">This field is required!</div>
-            <div class="alert alert-danger" role="alert" style="display: none">Password does not match!</div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Password does not match!</p></div>
         </div>
         <div class="check_password">
             <input id="check" type="checkbox">

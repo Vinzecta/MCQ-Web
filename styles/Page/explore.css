@@ -19,6 +19,7 @@ html {
     margin-left: 10%;
     margin-right: 10%;
     height: auto;
+    margin-top: 5%;
 }
 
 .category-title {
@@ -43,7 +44,7 @@ html {
     height: auto;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -54,6 +55,8 @@ html {
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.3s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
 }
 
 .category-image {

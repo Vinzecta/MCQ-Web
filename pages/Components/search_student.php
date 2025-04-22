@@ -25,7 +25,7 @@ require_once "../logical/function.php";
 <body>
     <section id="search-bar">
         <input id="search" type="text" placeholder="Search" onkeyup="show_result_students(this.value, <?php echo $_SESSION['page_number'];?>)">
-        <img src="../images/explore/search.png" alt="Search icon">
+        <!-- <img src="../images/explore/search.png" alt="Search icon"> -->
     </section>
 
     <form id="sort-section" method="post" action="../logical/sort_form.php">

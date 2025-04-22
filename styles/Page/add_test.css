@@ -1,6 +1,8 @@
 @import url("add_question.css");
 @import url("../Component/pagination.css");
 @import url("../Component/search.css");
+@import url("../Component/alert.css");
+@import url("../Component/success.css");
 
 body, html {
     font-family: "Outfit", sans-serif;
@@ -150,4 +152,16 @@ body, html {
 #question-selection button:hover {
     background-color: rgb(78, 78, 243);
     font-weight: bold;
+}
+
+.alert {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.success {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
 }

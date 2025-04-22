@@ -7,7 +7,7 @@
 </head>
 <body>
     <footer>
-        <p>&copy sigma boy</p>
+        <p>&copy Group 7 (CC01)</p>
         <div id="social-media">
             <p>Follow us:</p>
             <img id="facebook" src="../images/footer/facebook.png" alt="facebook">

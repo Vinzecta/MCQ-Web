@@ -20,17 +20,17 @@ if(!isset($_SESSION))
             <input id="email" type="text" placeholder="Email" name="Email">
 
             <!-- Email validation -->
-            <div class="alert" style="display: none"><p>This field is required!</p></div>
-            <div class="alert" style="display: none"><p>Please enter a valid email address!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>Please enter a valid email address!</p></div>
 
             <input type="password" placeholder="Password" id="password" name="Password">
 
             <!-- password validation -->
-            <div class="alert" style="display: none"><p>This field is required!</p></div>
+            <div class="alert alert-danger" role="alert" style="display: none"><p>This field is required!</p></div>
             <?php 
             // Display error
                 if (isset($_SESSION['error_message'])) {
-                    echo "<div class='alert'><p>" . $_SESSION['error_message'] . "</p></div>";
+                    echo "<div class='alert alert-danger' role='alert'><p>" . $_SESSION['error_message'] . "</p></div>";
                     unset($_SESSION['error_message']); // Clear the message after displaying it
                 }
                 if (isset($_SESSION['success_message'])) {
@@ -47,8 +47,8 @@ if(!isset($_SESSION))
         </div>
         <a id="forgot_password" href="index.php?page=reset_password">Forgot password?</a>
         <button type="submit" id="sign_in_button">Sign in</button>
-        <!-- <p id="or">or</p>
-        <div class="social_image">
+        <p id="or">or</p>
+        <!-- <div class="social_image">
             <img src="../images/sign in/google.png" alt="google" id="google_icon">
             <img src="../images/sign in/facebook.png" alt="facebook" id="facebook_icon">
         </div> -->
